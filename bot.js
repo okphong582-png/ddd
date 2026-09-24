@@ -3,7 +3,7 @@
  * Hỗ trợ phân quyền Admin động (Thêm/xóa admin)
  * Tạo Token trực tiếp trên Telegram (/taotoken)
  * Tự động xóa sạch tin nhắn cũ và kick out lập tức khi hết hạn/xóa token
- * Liên hệ Admin mua token: @spamsmstaken và @icebearvndev
+ * Quản lý Admin: Hoangha (ID: 6482147126)
  */
 
 const firebase = require('./lib/firebase');
@@ -14,7 +14,7 @@ const doithevip = require('./lib/doithevip');
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8320966192:AAFUvbXL9LlBQNYRWly3L478eaEzHTNHOwI';
 const BASE_URL = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
-const ADMIN_CONTACT = `👑 <b>Admin 1:</b> @spamsmstaken\n👑 <b>Admin 2:</b> @icebearvndev`;
+const ADMIN_CONTACT = `👑 <b>Admin:</b> Hoangha (ID: <code>6482147126</code>)`;
 
 // Bộ nhớ đệm
 const notificationSubscribers = new Set();
@@ -102,7 +102,7 @@ async function startCardPolling({ requestId, chatId, userId, userDetails, telco,
             reply_markup: {
               inline_keyboard: [
                 [{ text: '🔄 Nạp Lại Thẻ Khác', callback_data: 'napthe_menu' }],
-                [{ text: '💬 Liên Hệ Admin', url: 'https://t.me/spamsmstaken' }]
+                [{ text: '💬 Liên Hệ Admin', url: 'tg://user?id=6482147126' }]
               ]
             }
           }
@@ -341,7 +341,7 @@ function formatMainMenuText({ user, isAdmin, authCheck }) {
 
   if (isAdmin) {
     return `
-🐻 <b>VẢ VỠ MỒM NHÀ CÁI - BẢNG ĐIỀU KHIỂN ADMIN</b> 🐻
+☁️ <b>HOANGHA SKY - BẢNG ĐIỀU KHIỂN ADMIN</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━━━━
 🎲 <b>TRUNG TÂM SOI CẦU TÀI XỈU THỰC CHIẾN AI</b> 🎲
 
@@ -362,11 +362,11 @@ function formatMainMenuText({ user, isAdmin, authCheck }) {
   const durationStr = authCheck?.tokenData?.duration || 'VIP Bản Quyền';
 
   return `
-🐻 <b>VẢ VỠ MỒM NHÀ CÁI - TÀI XỈU VIP PRO</b> 🐻
+☁️ <b>HOANGHA SKY - TÀI XỈU VIP PRO</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━━━━
 🎲 <b>TRUNG TÂM SOI CẦU TÀI XỈU THỰC CHIẾN AI</b> 🎲
 
-👤 <b>Chiến Binh:</b> ${name} (ID: <code>${userId}</code>)
+🌤️ <b>Thành Viên Sky:</b> ${name} (ID: <code>${userId}</code>)
 💎 <b>Cấp Bậc:</b> 👑 <b>VIP MASTER TÀI XỈU (Đã Kích Hoạt)</b>
 ⏱ <b>Thời Hạn:</b> 🟢 <b>${durationStr}</b>
 ⚡ <b>Tốc Độ Quét:</b> <code>0.02s</code> Realtime từ 25+ Sòng Bài Lớn
@@ -561,13 +561,13 @@ function formatPredictionMessage(channelData) {
   }
 
   const battleStats = `
-🐻 <b>PHONG ĐỘ THỰC CHIẾN [${channel.platform}]:</b>
+☁️ <b>PHONG ĐỘ THỰC CHIẾN [${channel.platform}]:</b>
 • Lượt bám cầu: <b>#${ai?.epochs || 85} tay liên tiếp</b>
 • Tỉ lệ húp bàn cầu: <b>${ai?.win_rate || backtest.winRate}%</b> (${ai?.total_wins || 42} Húp / ${ai?.total_losses || 8} Gãy)
 • Chuỗi ăn thông hiện tại: <b>${ai?.current_streak ? '🔥 ' + ai.current_streak + ' tay liên tiếp' : '🔥 3 tay'}</b>`;
 
   return `
-🐻 <b>VẢ VỠ MỒM NHÀ CÁI</b> 🐻
+☁️ <b>HOANGHA SKY - SOI CẦU TÀI XỈU</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━
 🎮 <b>Cổng cược:</b> ${channel.icon || '🎲'} <b>${channel.platform}</b> (${channel.gameName})
 🎯 <b>MỤC TIÊU PHIÊN:</b> <code>#${nextNum}</code>
@@ -738,7 +738,7 @@ Tự động duyệt thẻ siêu tốc (15s - 45s) và cấp token kích hoạt 
     const overviewList = collector.getAiOverview();
     const top5 = overviewList.slice(0, 8);
 
-    let bxhText = `🐻 <b>BẢNG VÀNG THỰC CHIẾN - VẢ VỠ MỒM NHÀ CÁI</b> 🐻\n━━━━━━━━━━━━━━━━━━━━\n`;
+    let bxhText = `☁️ <b>BẢNG VÀNG THỰC CHIẾN - HOANGHA SKY</b> ☁️\n━━━━━━━━━━━━━━━━━━━━\n`;
     bxhText += `<i>Thống kê các bàn cầu đang có phong độ ăn thông và húp dày nhất hiện tại. Hệ thống bám cầu thực chiến 24/7 và đối chiếu kết quả từng giây với nhà cái!</i>\n\n`;
     bxhText += `🏆 <b>TOP BÀN CẦU ĐANG HÚP KHÉT NHẤT:</b>\n`;
 
@@ -890,7 +890,7 @@ Tự động duyệt thẻ siêu tốc (15s - 45s) và cấp token kích hoạt 
 📋 <b>Tin nhắn mẫu gửi khách (Chạm để sao chép):</b>
 <code>Chào bạn, đây là mã Token bản quyền kích hoạt bot:</code>
 <code>${key}</code>
-<code>👉 Mở bot @icebearvntx_bot gửi mã này để kích hoạt nhé!</code>
+<code>👉 Gửi mã này vào bot để kích hoạt nhé!</code>
           `.trim(),
           {
             reply_markup: {
@@ -912,7 +912,7 @@ Tự động duyệt thẻ siêu tốc (15s - 45s) và cấp token kích hoạt 
     if (text.startsWith('/addadmin')) {
       const parts = text.split(' ').filter(Boolean);
       if (parts.length < 2) {
-        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/addadmin &lt;telegram_id&gt; [tên_admin]</code>\nVí dụ: <code>/addadmin 7769479790 SuperAdmin</code>`, {
+        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/addadmin &lt;telegram_id&gt; [tên_admin]</code>\nVí dụ: <code>/addadmin 6482147126 SuperAdmin</code>`, {
           reply_markup: { inline_keyboard: [[{ text: '🔙 Quản Lý Admin', callback_data: 'admin_manage_admins' }]] }
         });
       }
@@ -935,7 +935,7 @@ Tự động duyệt thẻ siêu tốc (15s - 45s) và cấp token kích hoạt 
     if (text.startsWith('/deladmin')) {
       const parts = text.split(' ').filter(Boolean);
       if (parts.length < 2) {
-        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/deladmin &lt;telegram_id&gt;</code>\nVí dụ: <code>/deladmin 7769479790</code>`, {
+        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/deladmin &lt;telegram_id&gt;</code>\nVí dụ: <code>/deladmin 6482147126</code>`, {
           reply_markup: { inline_keyboard: [[{ text: '🔙 Quản Lý Admin', callback_data: 'admin_manage_admins' }]] }
         });
       }
@@ -957,7 +957,7 @@ Tự động duyệt thẻ siêu tốc (15s - 45s) và cấp token kích hoạt 
     if (text.startsWith('/chuyenquyen')) {
       const parts = text.split(' ').filter(Boolean);
       if (parts.length < 2) {
-        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/chuyenquyen &lt;telegram_id&gt;</code>\nVí dụ: <code>/chuyenquyen 7769479790</code>`, {
+        return sendOrReplaceMenu(chatId, `👉 Cú pháp: <code>/chuyenquyen &lt;telegram_id&gt;</code>\nVí dụ: <code>/chuyenquyen 6482147126</code>`, {
           reply_markup: { inline_keyboard: [[{ text: '🔙 Quản Lý Admin', callback_data: 'admin_manage_admins' }]] }
         });
       }
@@ -1104,7 +1104,7 @@ ${ADMIN_CONTACT}
                 { text: '🌟 Gói 7 Ngày (200k)', callback_data: 'napthe_pack_7d' },
                 { text: '👑 Gói 30 Ngày (1M)', callback_data: 'napthe_pack_30d' }
               ],
-              [{ text: '💬 Liên Hệ Admin', url: 'https://t.me/spamsmstaken' }]
+              [{ text: '💬 Liên Hệ Admin', url: 'tg://user?id=6482147126' }]
             ]
           }
         }
@@ -1115,11 +1115,11 @@ ${ADMIN_CONTACT}
       return sendOrReplaceMenu(
         chatId,
         `
-🐻 <b>VẢ VỠ MỒM NHÀ CÁI - TÀI XỈU VIP PRO</b> 🐻
+☁️ <b>HOANGHA SKY - TÀI XỈU VIP PRO</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━━━━
 🎲 <b>HỆ THỐNG SOI CẦU TÀI XỈU THỰC CHIẾN CHUYÊN NGHIỆP</b> 🎲
 
-Chào mừng bạn đến với hệ thống bắt vị Tài Xỉu độc quyền của <b>Gấu Nâu</b> & <b>Đội Ngũ Thực Chiến</b>!
+Chào mừng bạn đến với hệ thống bắt vị Tài Xỉu độc quyền phong cách <b>Hoangha SKY</b>!
 Hệ thống khóa mã Token riêng theo từng tài khoản Telegram để đảm bảo tốc độ đọc cầu realtime 0.02s nhanh nhất thị trường.
 
 👉 <b>Nếu bạn đã có Mã Token:</b> Hãy gửi mã vào đây để mở khóa bot ngay!
@@ -1140,7 +1140,7 @@ ${ADMIN_CONTACT}
                 { text: '🌟 Mua Gói 7 Ngày (200k)', callback_data: 'napthe_pack_7d' },
                 { text: '👑 Mua Gói 30 Ngày (1M)', callback_data: 'napthe_pack_30d' }
               ],
-              [{ text: '💬 Nhắn Tin Admin Mua Mã', url: 'https://t.me/spamsmstaken' }]
+              [{ text: '💬 Nhắn Tin Admin Mua Mã', url: 'tg://user?id=6482147126' }]
             ]
           }
         }
@@ -1153,13 +1153,13 @@ ${ADMIN_CONTACT}
       return sendOrReplaceMenu(
         chatId,
         `
-🐻 <b>KÍCH HOẠT BẢN QUYỀN THÀNH CÔNG!</b> 🐻
+☁️ <b>KÍCH HOẠT BẢN QUYỀN THÀNH CÔNG!</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━━━━
 👤 <b>Chiến Binh:</b> ${msg.from.first_name || ''} (@${msg.from.username || userId})
 🔑 <b>Mã Token:</b> <code>${text.toUpperCase()}</code>
 ⏱ <b>Thời Hạn:</b> <b>${result.tokenData?.duration || 'Vĩnh viễn'}</b>
 ━━━━━━━━━━━━━━━━━━━━━━━
-🎉 Chào mừng Đại Ca! Toàn bộ 25+ bàn cầu Tài Xỉu đã sẵn sàng chờ lệnh vả vỡ mồm nhà cái.
+🎉 Chào mừng Sky! Toàn bộ 25+ bàn cầu Tài Xỉu đã sẵn sàng chờ lệnh bẻ cầu cùng Hoangha SKY.
 
 👇 <b>Chọn sảnh Tài Xỉu bên dưới để bắt đầu bẻ cầu:</b>
         `.trim(),
@@ -1273,7 +1273,7 @@ ${ADMIN_CONTACT}
         reply_markup: {
           inline_keyboard: [
             [{ text: '💳 NẠP THẺ GIA HẠN TOKEN', callback_data: 'napthe_menu' }],
-            [{ text: '💬 Liên Hệ Admin', url: 'https://t.me/spamsmstaken' }]
+            [{ text: '💬 Liên Hệ Admin', url: 'tg://user?id=6482147126' }]
           ]
         }
       }
@@ -1479,7 +1479,7 @@ Hỗ trợ tất cả các nhà mạng và thẻ game:
 📋 <b>Nội dung gửi khách:</b>
 <code>Chào bạn, mã Token kích hoạt bot của bạn là:</code>
 <code>${key}</code>
-<code>👉 Vào bot @icebearvntx_bot gửi mã trên để kích hoạt nhé!</code>
+<code>👉 Hãy gửi mã trên vào bot để kích hoạt nhé!</code>
       `.trim(),
       {
         reply_markup: {
@@ -1547,22 +1547,15 @@ Hỗ trợ tất cả các nhà mạng và thẻ game:
     text += `👉 <b>Lệnh nâng Admin:</b> <code>/addadmin &lt;id&gt; [tên]</code>\n`;
     text += `👉 <b>Lệnh chuyển Dân thường:</b> <code>/deladmin &lt;id&gt;</code>\n`;
     text += `👉 <b>Chuyển đổi 2 chiều nhanh:</b> <code>/chuyenquyen &lt;id&gt;</code>\n`;
-    text += `<i>(Hoặc bấm các phím chuyển đổi trực tiếp bên dưới)</i>`;
+    text += `<i>(Hoặc bấm phím chuyển đổi trực tiếp bên dưới)</i>`;
 
-    const is7769Admin = firebase.isAdmin('7769479790');
-    const is8083Admin = firebase.isAdmin('8083052279');
+    const is6482Admin = firebase.isAdmin('6482147126');
 
     const inlineKeyboard = [
       [
         {
-          text: is7769Admin ? '🔄 7769479790 ➜ Dân Thường' : '👑 7769479790 ➜ Admin',
-          callback_data: 'toggle_role_7769479790'
-        }
-      ],
-      [
-        {
-          text: is8083Admin ? '🔄 8083052279 ➜ Dân Thường' : '👑 8083052279 ➜ Admin',
-          callback_data: 'toggle_role_8083052279'
+          text: is6482Admin ? '🔄 6482147126 ➜ Dân Thường' : '👑 6482147126 ➜ Admin',
+          callback_data: 'toggle_role_6482147126'
         }
       ],
       [{ text: '🔙 Quay Lại Menu Admin', callback_data: 'admin_dashboard' }]
@@ -1579,7 +1572,7 @@ Hỗ trợ tất cả các nhà mạng và thẻ game:
   else if (data === 'admin_dashboard' || data === 'admin_menu') {
     if (!isAdmin) return;
     const text = `
-🐻 <b>VẢ VỠ MỒM NHÀ CÁI - BẢNG ĐIỀU KHIỂN ADMIN</b> 🐻
+☁️ <b>HOANGHA SKY - BẢNG ĐIỀU KHIỂN ADMIN</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━
 Kính chào Sếp <b>${query.from.first_name || 'Admin'}</b> (ID: <code>${userId}</code>)!
 Hệ thống sẵn sàng phục vụ toàn bộ chức năng quản trị cấp cao và bắt vị thực chiến.
@@ -1716,13 +1709,13 @@ ${menuText}
 
     // Gửi màn hình quét nhịp bàn cầu trước trên đúng tin nhắn này
     const scanText = `
-🐻 <b>ĐANG BẮT VỊ & SOI CẦU VẢ NHÀ CÁI...</b> 🐻
+☁️ <b>HOANGHA SKY ĐANG BẮT VỊ & SOI CẦU...</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━
 🎮 Cổng: <b>${channelData.channel.platform}</b> (${channelData.channel.gameName})
 ⚡ <i>Đang đọc vị xúc xắc, rà soát nhịp bẻ cầu & bắt dải điểm...</i>
 
 [▓▓▓▓▓▓▓▓░░] <b>85%</b> Đang khóa chặt kết quả tay này!
-⏳ <i>Chờ 3-5 giây để ra đòn vả vỡ mồm nhà cái...</i>
+⏳ <i>Chờ 3-5 giây để ra đòn bẻ cầu chuẩn xác...</i>
     `.trim();
 
     await renderSingleMessage(chatId, messageId, scanText).catch(() => {});
@@ -1805,7 +1798,7 @@ ${menuText}
     const overviewList = collector.getAiOverview();
     const top5 = overviewList.slice(0, 8);
 
-    let text = `🐻 <b>BẢNG VÀNG THỰC CHIẾN - VẢ VỠ MỒM NHÀ CÁI</b> 🐻\n━━━━━━━━━━━━━━━━━━━━\n`;
+    let text = `☁️ <b>BẢNG VÀNG THỰC CHIẾN - HOANGHA SKY</b> ☁️\n━━━━━━━━━━━━━━━━━━━━\n`;
     text += `<i>Thống kê các bàn cầu đang có phong độ ăn thông và húp dày nhất hiện tại. Hệ thống bám cầu thực chiến 24/7 và đối chiếu kết quả từng giây với nhà cái!</i>\n\n`;
     text += `🏆 <b>TOP BÀN CẦU ĐANG HÚP KHÉT NHẤT:</b>\n`;
 
@@ -1846,7 +1839,7 @@ ${menuText}
     const isSicbo = ch.gameType === 'sicbo';
     const isXocdia = ch.gameType === 'xocdia';
 
-    let text = `🐻 <b>CHI TIẾT PHONG ĐỘ BÀN CẦU: ${ch.platform} (${ch.gameName})</b>\n━━━━━━━━━━━━━━━━━━━━\n`;
+    let text = `☁️ <b>CHI TIẾT PHONG ĐỘ: ${ch.platform} (${ch.gameName})</b> ☁️\n━━━━━━━━━━━━━━━━━━━━\n`;
     text += `📊 <b>CHIẾN TÍCH THỰC CHIẾN:</b>\n`;
     text += `• Tổng số tay đã theo dõi: <b>${ai?.total_bets || 0} tay</b>\n`;
     text += `• Số tay Húp trọn: <b>${ai?.total_wins || 0} tay</b> (${ai?.win_rate || 78}%)\n`;
@@ -1960,7 +1953,7 @@ ${menuText}
     const bt = channelData.prediction?.backtest || { winRate: 82.5, currentStreak: 4, maxStreak: 9 };
 
     const text = `
-🐻 <b>PHONG ĐỘ THỰC CHIẾN - VẢ VỠ MỒM NHÀ CÁI</b> 🐻
+☁️ <b>PHONG ĐỘ THỰC CHIẾN - HOANGHA SKY</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━
 🎯 <b>Tỉ Lệ Húp Bình Quân:</b> <code>${bt.winRate}%</code>
 🔥 <b>Chuỗi Ăn Thông Hiện Tại:</b> <code>${bt.currentStreak} tay</code>
@@ -1985,7 +1978,7 @@ ${menuText}
   // Thông tin user
   else if (data === 'user_info') {
     const text = `
-🐻 <b>HỒ SƠ CHIẾN BINH VẢ VỠ MỒM NHÀ CÁI</b> 🐻
+☁️ <b>HỒ SƠ CHIẾN BINH - HOANGHA SKY</b> ☁️
 ━━━━━━━━━━━━━━━━━━━━
 🆔 <b>Telegram ID:</b> <code>${userId}</code>
 👤 <b>Tên:</b> ${query.from.first_name || ''} (@${query.from.username || 'Chưa đặt user'})

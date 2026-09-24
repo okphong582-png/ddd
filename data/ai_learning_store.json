@@ -4,84 +4,135 @@
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 149,
-    "total_bets": 137,
-    "total_wins": 63,
+    "epochs": 152,
+    "total_bets": 140,
+    "total_wins": 66,
     "total_losses": 74,
-    "win_rate": 46,
-    "current_streak": 3,
+    "win_rate": 47.1,
+    "current_streak": 6,
     "max_streak": 6,
     "weights": {
-      "markov": 0.15,
-      "pattern": 0.43,
-      "dice_matrix": 0.28,
+      "markov": 0.14,
+      "pattern": 0.42,
+      "dice_matrix": 0.31,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "3248737",
+      "phien_target": "3263404",
       "prediction": "TÀI",
-      "confidence": 80,
+      "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 24,
-          "2": 26,
-          "3": 14,
-          "4": 31,
-          "5": 28,
-          "6": 27
+          "1": 23,
+          "2": 27,
+          "3": 17,
+          "4": 27,
+          "5": 31,
+          "6": 25
         },
         "dicePercentages": {
-          "1": 16,
-          "2": 17.3,
-          "3": 9.3,
-          "4": 20.7,
-          "5": 18.7,
-          "6": 18
+          "1": 15.3,
+          "2": 18,
+          "3": 11.3,
+          "4": 18,
+          "5": 20.7,
+          "6": 16.7
         },
-        "hotFace": 4,
+        "hotFace": 5,
         "hotFaceRate": 20.7,
-        "secondHot": 5,
-        "secondHotRate": 18.7,
+        "secondHot": 2,
+        "secondHotRate": 18,
         "coldFace": 3,
-        "coldFaceRate": 9.3,
-        "topPair": "5-6",
-        "topPairRate": 20,
+        "coldFaceRate": 11.3,
+        "topPair": "2-4",
+        "topPairRate": 18,
         "tripleRate": 2,
         "predictedDices": [
+          2,
+          4,
+          5
+        ],
+        "predictedSum": 11,
+        "sumFreq": {
+          "5": 1,
+          "6": 3,
+          "7": 2,
+          "8": 5,
+          "9": 6,
+          "10": 3,
+          "11": 10,
+          "12": 7,
+          "13": 5,
+          "14": 3,
+          "15": 2,
+          "16": 2,
+          "17": 1
+        },
+        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (20.7%), mặt ⚀ 3 đang lạnh (11.3%). Cặp số tiềm năng: 2-4."
+      },
+      "predicted_dices": [
+        2,
+        4,
+        5
+      ],
+      "predicted_sum": 11,
+      "created_at": "2026-09-24T12:53:00.115Z"
+    },
+    "recent_matches": [
+      {
+        "phien": "3248739",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          4,
+          5
+        ],
+        "actual_dices": [
+          6,
+          6,
+          1
+        ],
+        "time": "22:44:22"
+      },
+      {
+        "phien": "3248738",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          4,
+          5
+        ],
+        "actual_dices": [
+          3,
+          5,
+          5
+        ],
+        "time": "22:43:12"
+      },
+      {
+        "phien": "3248737",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
           4,
           5,
           6
         ],
-        "predictedSum": 15,
-        "sumFreq": {
-          "5": 1,
-          "6": 3,
-          "7": 3,
-          "8": 4,
-          "9": 7,
-          "10": 3,
-          "11": 9,
-          "12": 6,
-          "13": 4,
-          "14": 3,
-          "15": 3,
-          "16": 3,
-          "17": 1
-        },
-        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (20.7%), mặt ⚀ 3 đang lạnh (9.3%). Cặp số tiềm năng: 5-6."
+        "actual_dices": [
+          2,
+          5,
+          5
+        ],
+        "time": "22:42:02"
       },
-      "predicted_dices": [
-        4,
-        5,
-        6
-      ],
-      "predicted_sum": 15,
-      "created_at": "2026-09-12T15:41:12.382Z"
-    },
-    "recent_matches": [
       {
         "phien": "3248690",
         "predicted": "TÀI",
@@ -285,60 +336,9 @@
           4
         ],
         "time": "21:33:15"
-      },
-      {
-        "phien": "3248677",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          2,
-          5,
-          4
-        ],
-        "time": "21:32:05"
-      },
-      {
-        "phien": "3248676",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          2,
-          1,
-          2
-        ],
-        "time": "21:30:54"
-      },
-      {
-        "phien": "3248675",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          5,
-          6,
-          6
-        ],
-        "time": "21:29:44"
       }
     ],
-    "updated_at": "2026-09-12T14:47:12.347Z"
+    "updated_at": "2026-09-12T15:44:22.745Z"
   },
   "sunwin_xdlive": {
     "channel_id": "sunwin_xdlive",
@@ -401,51 +401,51 @@
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 122,
-    "total_bets": 110,
-    "total_wins": 59,
-    "total_losses": 51,
-    "win_rate": 53.6,
-    "current_streak": 1,
+    "epochs": 126,
+    "total_bets": 114,
+    "total_wins": 60,
+    "total_losses": 54,
+    "win_rate": 52.6,
+    "current_streak": 0,
     "max_streak": 6,
     "weights": {
       "markov": 0.21,
-      "pattern": 0.42,
-      "dice_matrix": 0.23,
+      "pattern": 0.45,
+      "dice_matrix": 0.19,
       "mean_reversion": 0.14
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2726452",
+      "phien_target": "2743363",
       "prediction": "TÀI",
-      "confidence": 80,
+      "confidence": 79,
       "game_type": "sicbo",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 22,
-          "2": 22,
-          "3": 25,
+          "1": 21,
+          "2": 23,
+          "3": 27,
           "4": 25,
-          "5": 29,
-          "6": 27
+          "5": 26,
+          "6": 28
         },
         "dicePercentages": {
-          "1": 14.7,
-          "2": 14.7,
-          "3": 16.7,
+          "1": 14,
+          "2": 15.3,
+          "3": 18,
           "4": 16.7,
-          "5": 19.3,
-          "6": 18
+          "5": 17.3,
+          "6": 18.7
         },
-        "hotFace": 5,
-        "hotFaceRate": 19.3,
-        "secondHot": 6,
+        "hotFace": 6,
+        "hotFaceRate": 18.7,
+        "secondHot": 3,
         "secondHotRate": 18,
-        "coldFace": 2,
-        "coldFaceRate": 14.7,
+        "coldFace": 1,
+        "coldFaceRate": 14,
         "topPair": "5-6",
-        "topPairRate": 22,
+        "topPairRate": 20,
         "tripleRate": 2,
         "predictedDices": [
           3,
@@ -458,17 +458,17 @@
           "4": 1,
           "6": 2,
           "7": 1,
-          "8": 5,
-          "9": 3,
-          "10": 5,
-          "11": 8,
-          "12": 8,
+          "8": 7,
+          "9": 2,
+          "10": 6,
+          "11": 5,
+          "12": 9,
           "13": 7,
-          "14": 6,
+          "14": 5,
           "15": 2,
-          "16": 1
+          "16": 2
         },
-        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (19.3%), mặt ⚀ 2 đang lạnh (14.7%). Cặp số tiềm năng: 5-6."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (18.7%), mặt ⚀ 1 đang lạnh (14%). Cặp số tiềm năng: 5-6."
       },
       "predicted_dices": [
         3,
@@ -476,9 +476,77 @@
         6
       ],
       "predicted_sum": 14,
-      "created_at": "2026-09-12T15:41:12.655Z"
+      "created_at": "2026-09-24T12:53:10.509Z"
     },
     "recent_matches": [
+      {
+        "phien": "2743362",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          3,
+          5,
+          6
+        ],
+        "actual_dices": [
+          4,
+          2,
+          4
+        ],
+        "time": "19:53:10"
+      },
+      {
+        "phien": "2726454",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          3,
+          5,
+          6
+        ],
+        "actual_dices": [
+          2,
+          5,
+          1
+        ],
+        "time": "22:44:12"
+      },
+      {
+        "phien": "2726453",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          3,
+          5,
+          6
+        ],
+        "actual_dices": [
+          6,
+          3,
+          3
+        ],
+        "time": "22:43:02"
+      },
+      {
+        "phien": "2726452",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          3,
+          5,
+          6
+        ],
+        "actual_dices": [
+          5,
+          1,
+          2
+        ],
+        "time": "22:41:57"
+      },
       {
         "phien": "2726377",
         "predicted": "TÀI",
@@ -665,129 +733,61 @@
           6
         ],
         "time": "23:48:00"
-      },
-      {
-        "phien": "2725089",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          4,
-          4,
-          2
-        ],
-        "time": "23:46:59"
-      },
-      {
-        "phien": "2725088",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          5,
-          2,
-          5
-        ],
-        "time": "23:45:59"
-      },
-      {
-        "phien": "2725087",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          3,
-          6,
-          5
-        ],
-        "time": "23:44:59"
-      },
-      {
-        "phien": "2725086",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          4,
-          2,
-          6
-        ],
-        "time": "23:43:59"
       }
     ],
-    "updated_at": "2026-09-12T14:26:49.633Z"
+    "updated_at": "2026-09-24T12:53:10.509Z"
   },
   "hitclub_tx": {
     "channel_id": "hitclub_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 152,
-    "total_bets": 140,
+    "epochs": 154,
+    "total_bets": 142,
     "total_wins": 64,
-    "total_losses": 76,
-    "win_rate": 45.7,
-    "current_streak": 1,
+    "total_losses": 78,
+    "win_rate": 45.1,
+    "current_streak": 0,
     "max_streak": 4,
     "weights": {
       "markov": 0.24,
-      "pattern": 0.45,
-      "dice_matrix": 0.18,
+      "pattern": 0.47,
+      "dice_matrix": 0.15,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "3151577",
+      "phien_target": "3166059",
       "prediction": "TÀI",
-      "confidence": 80,
+      "confidence": 79,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 21,
-          "2": 18,
-          "3": 25,
-          "4": 30,
-          "5": 26,
-          "6": 30
+          "1": 23,
+          "2": 20,
+          "3": 22,
+          "4": 26,
+          "5": 27,
+          "6": 32
         },
         "dicePercentages": {
-          "1": 14,
-          "2": 12,
-          "3": 16.7,
-          "4": 20,
-          "5": 17.3,
-          "6": 20
+          "1": 15.3,
+          "2": 13.3,
+          "3": 14.7,
+          "4": 17.3,
+          "5": 18,
+          "6": 21.3
         },
-        "hotFace": 4,
-        "hotFaceRate": 20,
-        "secondHot": 6,
-        "secondHotRate": 20,
+        "hotFace": 6,
+        "hotFaceRate": 21.3,
+        "secondHot": 5,
+        "secondHotRate": 18,
         "coldFace": 2,
-        "coldFaceRate": 12,
+        "coldFaceRate": 13.3,
         "topPair": "3-4",
-        "topPairRate": 22,
-        "tripleRate": 4,
+        "topPairRate": 16,
+        "tripleRate": 6,
         "predictedDices": [
           4,
           5,
@@ -798,16 +798,16 @@
           "6": 1,
           "7": 5,
           "8": 1,
-          "9": 8,
+          "9": 9,
           "10": 5,
-          "11": 9,
-          "12": 4,
-          "13": 6,
-          "14": 5,
-          "15": 3,
+          "11": 8,
+          "12": 5,
+          "13": 5,
+          "14": 4,
+          "15": 4,
           "17": 3
         },
-        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (20%), mặt ⚀ 2 đang lạnh (12%). Cặp số tiềm năng: 3-4."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (21.3%), mặt ⚀ 2 đang lạnh (13.3%). Cặp số tiềm năng: 3-4."
       },
       "predicted_dices": [
         4,
@@ -815,9 +815,43 @@
         6
       ],
       "predicted_sum": 15,
-      "created_at": "2026-09-12T15:41:12.469Z"
+      "created_at": "2026-09-24T12:53:00.157Z"
     },
     "recent_matches": [
+      {
+        "phien": "3151645",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          6
+        ],
+        "actual_dices": [
+          4,
+          6,
+          2
+        ],
+        "time": "23:36:33"
+      },
+      {
+        "phien": "3151601",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          6
+        ],
+        "actual_dices": [
+          1,
+          6,
+          2
+        ],
+        "time": "22:44:37"
+      },
       {
         "phien": "3151562",
         "predicted": "TÀI",
@@ -1038,65 +1072,31 @@
           4
         ],
         "time": "21:33:05"
-      },
-      {
-        "phien": "3151549",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          4,
-          6
-        ],
-        "actual_dices": [
-          3,
-          5,
-          1
-        ],
-        "time": "21:31:55"
-      },
-      {
-        "phien": "3151548",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          6
-        ],
-        "actual_dices": [
-          4,
-          3,
-          4
-        ],
-        "time": "21:30:44"
       }
     ],
-    "updated_at": "2026-09-12T14:47:17.427Z"
+    "updated_at": "2026-09-12T16:36:33.473Z"
   },
   "hitclub_txmd5": {
     "channel_id": "hitclub_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 158,
-    "total_bets": 146,
+    "epochs": 159,
+    "total_bets": 147,
     "total_wins": 64,
-    "total_losses": 82,
-    "win_rate": 43.8,
-    "current_streak": 5,
+    "total_losses": 83,
+    "win_rate": 43.5,
+    "current_streak": 0,
     "max_streak": 7,
     "weights": {
       "markov": 0.18,
-      "pattern": 0.44,
-      "dice_matrix": 0.24,
+      "pattern": 0.45,
+      "dice_matrix": 0.22,
       "mean_reversion": 0.14
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2608167",
+      "phien_target": "2624208",
       "prediction": "TÀI",
       "confidence": 80,
       "game_type": "taixiu",
@@ -1104,59 +1104,77 @@
         "gameType": "taixiu",
         "diceCounts": {
           "1": 22,
-          "2": 31,
-          "3": 19,
-          "4": 23,
+          "2": 26,
+          "3": 22,
+          "4": 27,
           "5": 25,
-          "6": 30
+          "6": 28
         },
         "dicePercentages": {
           "1": 14.7,
-          "2": 20.7,
-          "3": 12.7,
-          "4": 15.3,
+          "2": 17.3,
+          "3": 14.7,
+          "4": 18,
           "5": 16.7,
-          "6": 20
+          "6": 18.7
         },
-        "hotFace": 2,
-        "hotFaceRate": 20.7,
-        "secondHot": 6,
-        "secondHotRate": 20,
+        "hotFace": 6,
+        "hotFaceRate": 18.7,
+        "secondHot": 4,
+        "secondHotRate": 18,
         "coldFace": 3,
-        "coldFaceRate": 12.7,
+        "coldFaceRate": 14.7,
         "topPair": "2-5",
-        "topPairRate": 18,
+        "topPairRate": 16,
         "tripleRate": 2,
         "predictedDices": [
           2,
-          5,
+          4,
           6
         ],
-        "predictedSum": 13,
+        "predictedSum": 12,
         "sumFreq": {
           "5": 1,
           "6": 2,
           "7": 1,
           "8": 2,
-          "9": 8,
-          "10": 10,
-          "11": 3,
+          "9": 9,
+          "10": 8,
+          "11": 4,
           "12": 11,
-          "13": 8,
+          "13": 7,
           "14": 3,
-          "15": 1
+          "15": 1,
+          "16": 1
         },
-        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (20.7%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 2-5."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (18.7%), mặt ⚀ 3 đang lạnh (14.7%). Cặp số tiềm năng: 2-5."
       },
       "predicted_dices": [
         2,
-        5,
+        4,
         6
       ],
-      "predicted_sum": 13,
-      "created_at": "2026-09-12T15:41:12.919Z"
+      "predicted_sum": 12,
+      "created_at": "2026-09-24T12:53:00.184Z"
     },
     "recent_matches": [
+      {
+        "phien": "2608168",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          3,
+          4,
+          3
+        ],
+        "time": "22:43:17"
+      },
       {
         "phien": "2608127",
         "predicted": "TÀI",
@@ -1394,109 +1412,143 @@
           2
         ],
         "time": "21:34:05"
-      },
-      {
-        "phien": "2608113",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          4
-        ],
-        "actual_dices": [
-          5,
-          3,
-          1
-        ],
-        "time": "21:33:00"
       }
     ],
-    "updated_at": "2026-09-12T14:47:57.424Z"
+    "updated_at": "2026-09-12T15:43:17.782Z"
   },
   "hitclub_sicbo": {
     "channel_id": "hitclub_sicbo",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 154,
-    "total_bets": 142,
+    "epochs": 157,
+    "total_bets": 145,
     "total_wins": 77,
-    "total_losses": 65,
-    "win_rate": 54.2,
-    "current_streak": 2,
+    "total_losses": 68,
+    "win_rate": 53.1,
+    "current_streak": 0,
     "max_streak": 10,
     "weights": {
       "markov": 0.13,
-      "pattern": 0.38,
-      "dice_matrix": 0.37,
+      "pattern": 0.4,
+      "dice_matrix": 0.33,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "702858",
-      "prediction": "TÀI",
-      "confidence": 81,
+      "phien_target": "718116",
+      "prediction": "XỈU",
+      "confidence": 77,
       "game_type": "sicbo",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
           "1": 22,
-          "2": 26,
-          "3": 24,
-          "4": 20,
-          "5": 29,
-          "6": 29
+          "2": 25,
+          "3": 26,
+          "4": 22,
+          "5": 30,
+          "6": 25
         },
         "dicePercentages": {
           "1": 14.7,
-          "2": 17.3,
-          "3": 16,
-          "4": 13.3,
-          "5": 19.3,
-          "6": 19.3
+          "2": 16.7,
+          "3": 17.3,
+          "4": 14.7,
+          "5": 20,
+          "6": 16.7
         },
         "hotFace": 5,
-        "hotFaceRate": 19.3,
-        "secondHot": 6,
-        "secondHotRate": 19.3,
+        "hotFaceRate": 20,
+        "secondHot": 3,
+        "secondHotRate": 17.3,
         "coldFace": 4,
-        "coldFaceRate": 13.3,
+        "coldFaceRate": 14.7,
         "topPair": "3-4",
         "topPairRate": 20,
         "tripleRate": 2,
         "predictedDices": [
           2,
-          5,
-          6
+          3,
+          5
         ],
-        "predictedSum": 13,
+        "predictedSum": 10,
         "sumFreq": {
           "5": 1,
-          "6": 1,
-          "7": 4,
+          "6": 2,
+          "7": 5,
           "8": 3,
           "9": 4,
-          "10": 8,
-          "11": 7,
-          "12": 11,
+          "10": 5,
+          "11": 9,
+          "12": 10,
           "13": 3,
           "14": 4,
           "15": 2,
           "16": 2
         },
-        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (19.3%), mặt ⚀ 4 đang lạnh (13.3%). Cặp số tiềm năng: 3-4."
+        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (20%), mặt ⚀ 4 đang lạnh (14.7%). Cặp số tiềm năng: 3-4."
       },
       "predicted_dices": [
         2,
-        5,
-        6
+        3,
+        5
       ],
-      "predicted_sum": 13,
-      "created_at": "2026-09-12T15:41:12.763Z"
+      "predicted_sum": 10,
+      "created_at": "2026-09-24T12:53:00.705Z"
     },
     "recent_matches": [
+      {
+        "phien": "0702860",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          1,
+          2,
+          4
+        ],
+        "time": "22:43:47"
+      },
+      {
+        "phien": "0702859",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          3,
+          2,
+          1
+        ],
+        "time": "22:42:42"
+      },
+      {
+        "phien": "0702858",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          5,
+          2,
+          1
+        ],
+        "time": "22:41:37"
+      },
       {
         "phien": "0702809",
         "predicted": "TÀI",
@@ -1700,60 +1752,9 @@
           2
         ],
         "time": "21:35:15"
-      },
-      {
-        "phien": "0702797",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          5,
-          6
-        ],
-        "actual_dices": [
-          2,
-          6,
-          3
-        ],
-        "time": "21:34:10"
-      },
-      {
-        "phien": "0702796",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          5,
-          6
-        ],
-        "actual_dices": [
-          2,
-          5,
-          5
-        ],
-        "time": "21:33:00"
-      },
-      {
-        "phien": "0702795",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          5,
-          6
-        ],
-        "actual_dices": [
-          5,
-          1,
-          2
-        ],
-        "time": "21:31:50"
       }
     ],
-    "updated_at": "2026-09-12T14:47:32.647Z"
+    "updated_at": "2026-09-12T15:43:47.880Z"
   },
   "club789_tx": {
     "channel_id": "club789_tx",
@@ -1775,36 +1776,36 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "3134577",
-      "prediction": "XỈU",
-      "confidence": 80,
+      "phien_target": "3149324",
+      "prediction": "TÀI",
+      "confidence": 77,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 28,
-          "2": 19,
-          "3": 25,
+          "1": 27,
+          "2": 21,
+          "3": 26,
           "4": 16,
-          "5": 37,
+          "5": 35,
           "6": 25
         },
         "dicePercentages": {
-          "1": 18.7,
-          "2": 12.7,
-          "3": 16.7,
+          "1": 18,
+          "2": 14,
+          "3": 17.3,
           "4": 10.7,
-          "5": 24.7,
+          "5": 23.3,
           "6": 16.7
         },
         "hotFace": 5,
-        "hotFaceRate": 24.7,
+        "hotFaceRate": 23.3,
         "secondHot": 1,
-        "secondHotRate": 18.7,
+        "secondHotRate": 18,
         "coldFace": 4,
         "coldFaceRate": 10.7,
         "topPair": "3-5",
-        "topPairRate": 24,
+        "topPairRate": 22,
         "tripleRate": 4,
         "predictedDices": [
           1,
@@ -1816,18 +1817,18 @@
           "4": 2,
           "6": 1,
           "7": 3,
-          "8": 6,
+          "8": 7,
           "9": 6,
           "10": 5,
-          "11": 7,
+          "11": 6,
           "12": 5,
-          "13": 4,
-          "14": 5,
+          "13": 5,
+          "14": 4,
           "15": 4,
           "16": 1,
           "18": 1
         },
-        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (24.7%), mặt ⚀ 4 đang lạnh (10.7%). Cặp số tiềm năng: 3-5."
+        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (23.3%), mặt ⚀ 4 đang lạnh (10.7%). Cặp số tiềm năng: 3-5."
       },
       "predicted_dices": [
         1,
@@ -1835,7 +1836,7 @@
         5
       ],
       "predicted_sum": 9,
-      "created_at": "2026-09-12T14:05:02.181Z"
+      "created_at": "2026-09-24T12:53:00.275Z"
     },
     "recent_matches": [
       {
@@ -2050,22 +2051,22 @@
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 166,
-    "total_bets": 154,
-    "total_wins": 79,
-    "total_losses": 75,
-    "win_rate": 51.3,
-    "current_streak": 6,
-    "max_streak": 6,
+    "epochs": 169,
+    "total_bets": 157,
+    "total_wins": 80,
+    "total_losses": 77,
+    "win_rate": 51,
+    "current_streak": 0,
+    "max_streak": 7,
     "weights": {
       "markov": 0.2,
-      "pattern": 0.42,
-      "dice_matrix": 0.25,
+      "pattern": 0.44,
+      "dice_matrix": 0.23,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2546774",
+      "phien_target": "2564501",
       "prediction": "LẺ",
       "confidence": 80,
       "game_type": "xocdia",
@@ -2073,22 +2074,22 @@
         "gameType": "xocdia",
         "viStats": {
           "tu_trang": 0,
-          "ba_trang": 28,
+          "ba_trang": 27,
           "sap_doi": 18,
           "ba_do": 0,
-          "tu_do": 4
+          "tu_do": 5
         },
         "viPercentages": {
           "tu_trang": 0,
-          "ba_trang": 56,
+          "ba_trang": 54,
           "sap_doi": 36,
           "ba_do": 0,
-          "tu_do": 8
+          "tu_do": 10
         },
         "topVi": "3 Trắng - 1 Đỏ",
-        "topProb": 56,
+        "topProb": 54,
         "predictedVi": "3 Trắng - 1 Đỏ",
-        "summary": "Vị chủ đạo: 3 Trắng - 1 Đỏ (chiếm 56% các phiên gần đây)."
+        "summary": "Vị chủ đạo: 3 Trắng - 1 Đỏ (chiếm 54% các phiên gần đây)."
       },
       "predicted_dices": [
         4,
@@ -2096,9 +2097,60 @@
         3
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:27.541Z"
+      "created_at": "2026-09-24T12:53:00.223Z"
     },
     "recent_matches": [
+      {
+        "phien": "2546776",
+        "predicted": "LẺ",
+        "actual": "HÒA",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          2,
+          4,
+          3
+        ],
+        "time": "22:44:27"
+      },
+      {
+        "phien": "2546775",
+        "predicted": "LẺ",
+        "actual": "HÒA",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          5,
+          1,
+          5
+        ],
+        "time": "22:43:27"
+      },
+      {
+        "phien": "2546774",
+        "predicted": "LẺ",
+        "actual": "LẺ",
+        "is_win": true,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          6,
+          6,
+          3
+        ],
+        "time": "22:42:27"
+      },
       {
         "phien": "2546773",
         "predicted": "LẺ",
@@ -2302,112 +2354,61 @@
           2
         ],
         "time": "21:38:06"
-      },
-      {
-        "phien": "2546708",
-        "predicted": "LẺ",
-        "actual": "CHẴN",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          5,
-          6,
-          1
-        ],
-        "time": "21:37:10"
-      },
-      {
-        "phien": "2546707",
-        "predicted": "LẺ",
-        "actual": "CHẴN",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          6,
-          1,
-          6
-        ],
-        "time": "21:36:15"
-      },
-      {
-        "phien": "2546706",
-        "predicted": "LẺ",
-        "actual": "LẺ",
-        "is_win": true,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          6,
-          1,
-          3
-        ],
-        "time": "21:35:20"
       }
     ],
-    "updated_at": "2026-09-12T15:41:27.540Z"
+    "updated_at": "2026-09-12T15:44:27.752Z"
   },
   "club789_sicbo": {
     "channel_id": "club789_sicbo",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 164,
-    "total_bets": 152,
-    "total_wins": 75,
+    "epochs": 166,
+    "total_bets": 154,
+    "total_wins": 77,
     "total_losses": 77,
-    "win_rate": 49.3,
-    "current_streak": 0,
+    "win_rate": 50,
+    "current_streak": 2,
     "max_streak": 8,
     "weights": {
       "markov": 0.17,
-      "pattern": 0.45,
-      "dice_matrix": 0.24,
+      "pattern": 0.44,
+      "dice_matrix": 0.27,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2894744",
-      "prediction": "TÀI",
-      "confidence": 76,
+      "phien_target": "2912412",
+      "prediction": "XỈU",
+      "confidence": 80,
       "game_type": "sicbo",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 32,
-          "2": 27,
+          "1": 29,
+          "2": 31,
           "3": 27,
-          "4": 20,
-          "5": 23,
-          "6": 21
+          "4": 18,
+          "5": 26,
+          "6": 19
         },
         "dicePercentages": {
-          "1": 21.3,
-          "2": 18,
+          "1": 19.3,
+          "2": 20.7,
           "3": 18,
-          "4": 13.3,
-          "5": 15.3,
-          "6": 14
+          "4": 12,
+          "5": 17.3,
+          "6": 12.7
         },
-        "hotFace": 1,
-        "hotFaceRate": 21.3,
-        "secondHot": 2,
-        "secondHotRate": 18,
+        "hotFace": 2,
+        "hotFaceRate": 20.7,
+        "secondHot": 1,
+        "secondHotRate": 19.3,
         "coldFace": 4,
-        "coldFaceRate": 13.3,
+        "coldFaceRate": 12,
         "topPair": "2-3",
-        "topPairRate": 22,
-        "tripleRate": 2,
+        "topPairRate": 24,
+        "tripleRate": 4,
         "predictedDices": [
           1,
           2,
@@ -2417,19 +2418,19 @@
         "sumFreq": {
           "4": 1,
           "5": 1,
-          "6": 6,
+          "6": 8,
           "7": 2,
           "8": 7,
-          "9": 6,
+          "9": 5,
           "10": 6,
-          "11": 9,
-          "12": 4,
+          "11": 7,
+          "12": 3,
           "13": 4,
           "14": 1,
-          "15": 2,
-          "16": 1
+          "15": 3,
+          "16": 2
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (21.3%), mặt ⚀ 4 đang lạnh (13.3%). Cặp số tiềm năng: 2-3."
+        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (20.7%), mặt ⚀ 4 đang lạnh (12%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         1,
@@ -2437,9 +2438,43 @@
         3
       ],
       "predicted_sum": 6,
-      "created_at": "2026-09-12T15:41:17.731Z"
+      "created_at": "2026-09-24T12:53:00.902Z"
     },
     "recent_matches": [
+      {
+        "phien": "2894745",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          3
+        ],
+        "actual_dices": [
+          3,
+          6,
+          4
+        ],
+        "time": "22:44:12"
+      },
+      {
+        "phien": "2894744",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          3
+        ],
+        "actual_dices": [
+          6,
+          4,
+          5
+        ],
+        "time": "22:42:43"
+      },
       {
         "phien": "2894743",
         "predicted": "XỈU",
@@ -2660,128 +2695,160 @@
           6
         ],
         "time": "21:37:06"
-      },
-      {
-        "phien": "2894691",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          1,
-          5,
-          2
-        ],
-        "time": "21:36:11"
-      },
-      {
-        "phien": "2894690",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          3
-        ],
-        "actual_dices": [
-          1,
-          4,
-          1
-        ],
-        "time": "21:35:17"
       }
     ],
-    "updated_at": "2026-09-12T15:41:17.731Z"
+    "updated_at": "2026-09-12T15:44:12.918Z"
   },
   "b52_tx": {
     "channel_id": "b52_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 169,
-    "total_bets": 157,
-    "total_wins": 86,
-    "total_losses": 71,
-    "win_rate": 54.8,
-    "current_streak": 1,
+    "epochs": 173,
+    "total_bets": 161,
+    "total_wins": 89,
+    "total_losses": 72,
+    "win_rate": 55.3,
+    "current_streak": 3,
     "max_streak": 6,
     "weights": {
       "markov": 0.13,
-      "pattern": 0.4,
-      "dice_matrix": 0.34,
+      "pattern": 0.39,
+      "dice_matrix": 0.36,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2940548",
+      "phien_target": "2959714",
       "prediction": "XỈU",
-      "confidence": 81,
+      "confidence": 77,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 31,
-          "2": 31,
-          "3": 23,
-          "4": 20,
-          "5": 25,
-          "6": 20
+          "1": 27,
+          "2": 35,
+          "3": 26,
+          "4": 17,
+          "5": 26,
+          "6": 19
         },
         "dicePercentages": {
-          "1": 20.7,
-          "2": 20.7,
-          "3": 15.3,
-          "4": 13.3,
-          "5": 16.7,
-          "6": 13.3
+          "1": 18,
+          "2": 23.3,
+          "3": 17.3,
+          "4": 11.3,
+          "5": 17.3,
+          "6": 12.7
         },
-        "hotFace": 1,
-        "hotFaceRate": 20.7,
-        "secondHot": 2,
-        "secondHotRate": 20.7,
-        "coldFace": 6,
-        "coldFaceRate": 13.3,
-        "topPair": "1-3",
-        "topPairRate": 16,
+        "hotFace": 2,
+        "hotFaceRate": 23.3,
+        "secondHot": 1,
+        "secondHotRate": 18,
+        "coldFace": 4,
+        "coldFaceRate": 11.3,
+        "topPair": "1-2",
+        "topPairRate": 18,
         "tripleRate": 2,
         "predictedDices": [
           1,
           2,
-          5
+          3
         ],
-        "predictedSum": 8,
+        "predictedSum": 6,
         "sumFreq": {
           "4": 1,
-          "5": 1,
-          "6": 2,
+          "6": 3,
           "7": 5,
           "8": 9,
-          "9": 7,
-          "10": 6,
-          "11": 9,
-          "12": 4,
+          "9": 6,
+          "10": 7,
+          "11": 8,
+          "12": 5,
           "13": 1,
-          "14": 2,
+          "14": 3,
           "15": 1,
-          "16": 1,
-          "17": 1
+          "16": 1
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (20.7%), mặt ⚀ 6 đang lạnh (13.3%). Cặp số tiềm năng: 1-3."
+        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (23.3%), mặt ⚀ 4 đang lạnh (11.3%). Cặp số tiềm năng: 1-2."
       },
       "predicted_dices": [
         1,
         2,
-        5
+        3
       ],
-      "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:13.822Z"
+      "predicted_sum": 6,
+      "created_at": "2026-09-24T12:53:10.215Z"
     },
     "recent_matches": [
+      {
+        "phien": "2959713",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          2,
+          5,
+          3
+        ],
+        "time": "19:53:10"
+      },
+      {
+        "phien": "2940614",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          3,
+          1,
+          2
+        ],
+        "time": "23:36:33"
+      },
+      {
+        "phien": "2940554",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          5,
+          2,
+          1
+        ],
+        "time": "22:44:37"
+      },
+      {
+        "phien": "2940553",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          4,
+          1,
+          6
+        ],
+        "time": "22:43:47"
+      },
       {
         "phien": "2940489",
         "predicted": "XỈU",
@@ -2968,159 +3035,126 @@
           4
         ],
         "time": "21:39:31"
-      },
-      {
-        "phien": "2940478",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          5,
-          2,
-          5
-        ],
-        "time": "21:38:41"
-      },
-      {
-        "phien": "2940477",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          2,
-          2,
-          4
-        ],
-        "time": "21:37:51"
-      },
-      {
-        "phien": "2940476",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          5,
-          2,
-          4
-        ],
-        "time": "21:36:55"
-      },
-      {
-        "phien": "2940475",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          3,
-          2,
-          4
-        ],
-        "time": "21:36:05"
       }
     ],
-    "updated_at": "2026-09-12T14:48:12.343Z"
+    "updated_at": "2026-09-24T12:53:10.215Z"
   },
   "b52_txmd5": {
     "channel_id": "b52_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 170,
-    "total_bets": 158,
-    "total_wins": 61,
+    "epochs": 172,
+    "total_bets": 160,
+    "total_wins": 63,
     "total_losses": 97,
-    "win_rate": 38.6,
-    "current_streak": 0,
+    "win_rate": 39.4,
+    "current_streak": 2,
     "max_streak": 5,
     "weights": {
-      "markov": 0.18,
-      "pattern": 0.46,
-      "dice_matrix": 0.21,
+      "markov": 0.17,
+      "pattern": 0.44,
+      "dice_matrix": 0.24,
       "mean_reversion": 0.15
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2124796",
+      "phien_target": "2143690",
       "prediction": "XỈU",
       "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 19,
-          "2": 28,
-          "3": 35,
-          "4": 22,
-          "5": 27,
-          "6": 19
+          "1": 20,
+          "2": 29,
+          "3": 37,
+          "4": 24,
+          "5": 24,
+          "6": 16
         },
         "dicePercentages": {
-          "1": 12.7,
-          "2": 18.7,
-          "3": 23.3,
-          "4": 14.7,
-          "5": 18,
-          "6": 12.7
+          "1": 13.3,
+          "2": 19.3,
+          "3": 24.7,
+          "4": 16,
+          "5": 16,
+          "6": 10.7
         },
         "hotFace": 3,
-        "hotFaceRate": 23.3,
+        "hotFaceRate": 24.7,
         "secondHot": 2,
-        "secondHotRate": 18.7,
+        "secondHotRate": 19.3,
         "coldFace": 6,
-        "coldFaceRate": 12.7,
+        "coldFaceRate": 10.7,
         "topPair": "2-3",
-        "topPairRate": 26,
-        "tripleRate": 2,
+        "topPairRate": 28,
+        "tripleRate": 0,
         "predictedDices": [
           2,
           3,
-          5
+          4
         ],
-        "predictedSum": 10,
+        "predictedSum": 9,
         "sumFreq": {
+          "5": 1,
           "6": 5,
           "7": 4,
-          "8": 5,
+          "8": 6,
           "9": 4,
-          "10": 6,
+          "10": 7,
           "11": 9,
-          "12": 7,
-          "13": 4,
-          "14": 3,
-          "15": 2,
+          "12": 6,
+          "13": 2,
+          "14": 4,
+          "15": 1,
           "16": 1
         },
-        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (23.3%), mặt ⚀ 6 đang lạnh (12.7%). Cặp số tiềm năng: 2-3."
+        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (24.7%), mặt ⚀ 6 đang lạnh (10.7%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         2,
         3,
-        5
+        4
       ],
-      "predicted_sum": 10,
-      "created_at": "2026-09-12T15:41:13.502Z"
+      "predicted_sum": 9,
+      "created_at": "2026-09-24T12:53:00.545Z"
     },
     "recent_matches": [
+      {
+        "phien": "2124801",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          3,
+          5
+        ],
+        "actual_dices": [
+          4,
+          5,
+          1
+        ],
+        "time": "22:44:17"
+      },
+      {
+        "phien": "2124799",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          3,
+          5
+        ],
+        "actual_dices": [
+          2,
+          3,
+          3
+        ],
+        "time": "22:42:27"
+      },
       {
         "phien": "2124736",
         "predicted": "TÀI",
@@ -3341,94 +3375,60 @@
           5
         ],
         "time": "21:37:25"
-      },
-      {
-        "phien": "2124723",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          5
-        ],
-        "actual_dices": [
-          3,
-          3,
-          6
-        ],
-        "time": "21:36:30"
-      },
-      {
-        "phien": "2124722",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          3,
-          5
-        ],
-        "actual_dices": [
-          2,
-          4,
-          4
-        ],
-        "time": "21:35:40"
       }
     ],
-    "updated_at": "2026-09-12T14:47:47.461Z"
+    "updated_at": "2026-09-12T15:44:17.732Z"
   },
   "b52_sicbo": {
     "channel_id": "b52_sicbo",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 172,
-    "total_bets": 160,
-    "total_wins": 85,
-    "total_losses": 75,
-    "win_rate": 53.1,
-    "current_streak": 6,
-    "max_streak": 6,
+    "epochs": 176,
+    "total_bets": 164,
+    "total_wins": 88,
+    "total_losses": 76,
+    "win_rate": 53.7,
+    "current_streak": 1,
+    "max_streak": 8,
     "weights": {
       "markov": 0.13,
-      "pattern": 0.42,
-      "dice_matrix": 0.33,
+      "pattern": 0.4,
+      "dice_matrix": 0.34,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "4045334",
+      "phien_target": "4066176",
       "prediction": "XỈU",
-      "confidence": 80,
+      "confidence": 81,
       "game_type": "sicbo",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 27,
-          "2": 16,
-          "3": 40,
-          "4": 23,
-          "5": 24,
+          "1": 31,
+          "2": 15,
+          "3": 41,
+          "4": 21,
+          "5": 22,
           "6": 20
         },
         "dicePercentages": {
-          "1": 18,
-          "2": 10.7,
-          "3": 26.7,
-          "4": 15.3,
-          "5": 16,
+          "1": 20.7,
+          "2": 10,
+          "3": 27.3,
+          "4": 14,
+          "5": 14.7,
           "6": 13.3
         },
         "hotFace": 3,
-        "hotFaceRate": 26.7,
+        "hotFaceRate": 27.3,
         "secondHot": 1,
-        "secondHotRate": 18,
+        "secondHotRate": 20.7,
         "coldFace": 2,
-        "coldFaceRate": 10.7,
+        "coldFaceRate": 10,
         "topPair": "1-3",
-        "topPairRate": 28,
+        "topPairRate": 30,
         "tripleRate": 0,
         "predictedDices": [
           1,
@@ -3438,18 +3438,18 @@
         "predictedSum": 9,
         "sumFreq": {
           "4": 1,
-          "6": 1,
-          "7": 4,
+          "6": 2,
+          "7": 5,
           "8": 5,
-          "9": 8,
-          "10": 12,
+          "9": 7,
+          "10": 13,
           "11": 4,
           "12": 4,
-          "13": 6,
-          "14": 4,
+          "13": 5,
+          "14": 3,
           "15": 1
         },
-        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (26.7%), mặt ⚀ 2 đang lạnh (10.7%). Cặp số tiềm năng: 1-3."
+        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (27.3%), mặt ⚀ 2 đang lạnh (10%). Cặp số tiềm năng: 1-3."
       },
       "predicted_dices": [
         1,
@@ -3457,9 +3457,77 @@
         5
       ],
       "predicted_sum": 9,
-      "created_at": "2026-09-12T15:41:12.680Z"
+      "created_at": "2026-09-24T12:53:01.529Z"
     },
     "recent_matches": [
+      {
+        "phien": "4045337",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          5
+        ],
+        "actual_dices": [
+          1,
+          1,
+          4
+        ],
+        "time": "22:44:33"
+      },
+      {
+        "phien": "4045336",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          3,
+          6,
+          3
+        ],
+        "time": "22:43:38"
+      },
+      {
+        "phien": "4045335",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          1,
+          5,
+          4
+        ],
+        "time": "22:42:57"
+      },
+      {
+        "phien": "4045334",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          5
+        ],
+        "actual_dices": [
+          2,
+          1,
+          4
+        ],
+        "time": "22:42:02"
+      },
       {
         "phien": "4045268",
         "predicted": "XỈU",
@@ -3646,77 +3714,9 @@
           3
         ],
         "time": "21:39:21"
-      },
-      {
-        "phien": "4045257",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          4,
-          5,
-          6
-        ],
-        "time": "21:38:31"
-      },
-      {
-        "phien": "4045256",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          1,
-          6,
-          5
-        ],
-        "time": "21:37:46"
-      },
-      {
-        "phien": "4045255",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          1,
-          5,
-          3
-        ],
-        "time": "21:36:55"
-      },
-      {
-        "phien": "4045254",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          3,
-          5,
-          3
-        ],
-        "time": "21:36:05"
       }
     ],
-    "updated_at": "2026-09-12T14:47:32.519Z"
+    "updated_at": "2026-09-12T15:44:33.067Z"
   },
   "rikvip_tx": {
     "channel_id": "rikvip_tx",
@@ -3738,36 +3738,36 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2360410",
-      "prediction": "XỈU",
-      "confidence": 76,
+      "phien_target": "2374864",
+      "prediction": "TÀI",
+      "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
           "1": 23,
-          "2": 33,
-          "3": 21,
-          "4": 24,
-          "5": 22,
+          "2": 31,
+          "3": 20,
+          "4": 26,
+          "5": 23,
           "6": 27
         },
         "dicePercentages": {
           "1": 15.3,
-          "2": 22,
-          "3": 14,
-          "4": 16,
-          "5": 14.7,
+          "2": 20.7,
+          "3": 13.3,
+          "4": 17.3,
+          "5": 15.3,
           "6": 18
         },
         "hotFace": 2,
-        "hotFaceRate": 22,
+        "hotFaceRate": 20.7,
         "secondHot": 6,
         "secondHotRate": 18,
         "coldFace": 3,
-        "coldFaceRate": 14,
+        "coldFaceRate": 13.3,
         "topPair": "1-2",
-        "topPairRate": 26,
+        "topPairRate": 24,
         "tripleRate": 0,
         "predictedDices": [
           2,
@@ -3780,16 +3780,16 @@
           "6": 2,
           "7": 6,
           "8": 5,
-          "9": 7,
+          "9": 6,
           "10": 5,
           "11": 4,
           "12": 9,
           "13": 3,
           "14": 4,
-          "15": 3,
+          "15": 4,
           "16": 1
         },
-        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (22%), mặt ⚀ 3 đang lạnh (14%). Cặp số tiềm năng: 1-2."
+        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (20.7%), mặt ⚀ 3 đang lạnh (13.3%). Cặp số tiềm năng: 1-2."
       },
       "predicted_dices": [
         2,
@@ -3797,7 +3797,7 @@
         6
       ],
       "predicted_sum": 12,
-      "created_at": "2026-09-12T15:41:12.972Z"
+      "created_at": "2026-09-24T12:53:00.590Z"
     },
     "recent_matches": [
       {
@@ -4063,83 +4063,117 @@
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 153,
-    "total_bets": 141,
-    "total_wins": 75,
-    "total_losses": 66,
-    "win_rate": 53.2,
+    "epochs": 155,
+    "total_bets": 143,
+    "total_wins": 76,
+    "total_losses": 67,
+    "win_rate": 53.1,
     "current_streak": 1,
     "max_streak": 7,
     "weights": {
       "markov": 0.17,
       "pattern": 0.44,
-      "dice_matrix": 0.27,
+      "dice_matrix": 0.26,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1386137",
+      "phien_target": "1401215",
       "prediction": "TÀI",
       "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 23,
-          "2": 23,
-          "3": 31,
-          "4": 24,
-          "5": 22,
-          "6": 27
+          "1": 24,
+          "2": 24,
+          "3": 32,
+          "4": 22,
+          "5": 23,
+          "6": 25
         },
         "dicePercentages": {
-          "1": 15.3,
-          "2": 15.3,
-          "3": 20.7,
-          "4": 16,
-          "5": 14.7,
-          "6": 18
+          "1": 16,
+          "2": 16,
+          "3": 21.3,
+          "4": 14.7,
+          "5": 15.3,
+          "6": 16.7
         },
         "hotFace": 3,
-        "hotFaceRate": 20.7,
+        "hotFaceRate": 21.3,
         "secondHot": 6,
-        "secondHotRate": 18,
-        "coldFace": 5,
+        "secondHotRate": 16.7,
+        "coldFace": 4,
         "coldFaceRate": 14.7,
-        "topPair": "3-4",
-        "topPairRate": 22,
+        "topPair": "2-3",
+        "topPairRate": 26,
         "tripleRate": 0,
         "predictedDices": [
+          1,
           3,
-          4,
           6
         ],
-        "predictedSum": 13,
+        "predictedSum": 10,
         "sumFreq": {
           "5": 1,
-          "6": 3,
-          "7": 2,
+          "6": 4,
+          "7": 3,
           "8": 6,
-          "9": 8,
+          "9": 7,
           "10": 8,
           "11": 1,
           "12": 7,
-          "13": 5,
+          "13": 4,
           "14": 4,
           "15": 3,
           "16": 2
         },
-        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (20.7%), mặt ⚀ 5 đang lạnh (14.7%). Cặp số tiềm năng: 3-4."
+        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (21.3%), mặt ⚀ 4 đang lạnh (14.7%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
+        1,
         3,
-        4,
         6
       ],
-      "predicted_sum": 13,
-      "created_at": "2026-09-12T15:41:27.840Z"
+      "predicted_sum": 10,
+      "created_at": "2026-09-24T12:53:00.866Z"
     },
     "recent_matches": [
+      {
+        "phien": "1386139",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          3,
+          4,
+          6
+        ],
+        "actual_dices": [
+          3,
+          1,
+          3
+        ],
+        "time": "22:44:42"
+      },
+      {
+        "phien": "1386138",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          3,
+          4,
+          6
+        ],
+        "actual_dices": [
+          5,
+          3,
+          2
+        ],
+        "time": "22:43:37"
+      },
       {
         "phien": "1386089",
         "predicted": "XỈU",
@@ -4360,94 +4394,60 @@
           1
         ],
         "time": "21:32:50"
-      },
-      {
-        "phien": "1386075",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          6
-        ],
-        "actual_dices": [
-          5,
-          2,
-          3
-        ],
-        "time": "21:31:45"
-      },
-      {
-        "phien": "1386074",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          6
-        ],
-        "actual_dices": [
-          3,
-          6,
-          5
-        ],
-        "time": "21:30:34"
       }
     ],
-    "updated_at": "2026-09-12T14:47:42.428Z"
+    "updated_at": "2026-09-12T15:44:42.871Z"
   },
   "lc79_tx": {
     "channel_id": "lc79_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 152,
-    "total_bets": 140,
-    "total_wins": 67,
-    "total_losses": 73,
-    "win_rate": 47.9,
-    "current_streak": 1,
+    "epochs": 156,
+    "total_bets": 144,
+    "total_wins": 68,
+    "total_losses": 76,
+    "win_rate": 47.2,
+    "current_streak": 0,
     "max_streak": 6,
     "weights": {
-      "markov": 0.22,
-      "pattern": 0.45,
-      "dice_matrix": 0.19,
+      "markov": 0.23,
+      "pattern": 0.47,
+      "dice_matrix": 0.16,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "6905794",
-      "prediction": "XỈU",
-      "confidence": 80,
+      "phien_target": "6920408",
+      "prediction": "TÀI",
+      "confidence": 77,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 31,
-          "2": 26,
-          "3": 19,
-          "4": 24,
-          "5": 25,
-          "6": 25
+          "1": 30,
+          "2": 25,
+          "3": 18,
+          "4": 25,
+          "5": 28,
+          "6": 24
         },
         "dicePercentages": {
-          "1": 20.7,
-          "2": 17.3,
-          "3": 12.7,
-          "4": 16,
-          "5": 16.7,
-          "6": 16.7
+          "1": 20,
+          "2": 16.7,
+          "3": 12,
+          "4": 16.7,
+          "5": 18.7,
+          "6": 16
         },
         "hotFace": 1,
-        "hotFaceRate": 20.7,
-        "secondHot": 2,
-        "secondHotRate": 17.3,
+        "hotFaceRate": 20,
+        "secondHot": 5,
+        "secondHotRate": 18.7,
         "coldFace": 3,
-        "coldFaceRate": 12.7,
-        "topPair": "1-2",
-        "topPairRate": 20,
+        "coldFaceRate": 12,
+        "topPair": "4-5",
+        "topPairRate": 18,
         "tripleRate": 0,
         "predictedDices": [
           1,
@@ -4456,21 +4456,20 @@
         ],
         "predictedSum": 8,
         "sumFreq": {
-          "4": 1,
           "5": 2,
           "6": 3,
-          "7": 1,
-          "8": 3,
-          "9": 10,
+          "7": 3,
+          "8": 2,
+          "9": 9,
           "10": 8,
-          "11": 7,
-          "12": 3,
-          "13": 6,
+          "11": 6,
+          "12": 4,
+          "13": 7,
           "14": 4,
           "15": 1,
           "16": 1
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (20.7%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 1-2."
+        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (20%), mặt ⚀ 3 đang lạnh (12%). Cặp số tiềm năng: 4-5."
       },
       "predicted_dices": [
         1,
@@ -4478,9 +4477,77 @@
         5
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:12.499Z"
+      "created_at": "2026-09-24T12:53:10.245Z"
     },
     "recent_matches": [
+      {
+        "phien": "6920407",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          5,
+          1,
+          1
+        ],
+        "time": "19:53:10"
+      },
+      {
+        "phien": "6905796",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          4,
+          4,
+          6
+        ],
+        "time": "22:44:17"
+      },
+      {
+        "phien": "6905795",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          5,
+          6,
+          2
+        ],
+        "time": "22:43:07"
+      },
+      {
+        "phien": "6905794",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          5
+        ],
+        "actual_dices": [
+          2,
+          3,
+          2
+        ],
+        "time": "22:41:57"
+      },
       {
         "phien": "6905748",
         "predicted": "TÀI",
@@ -4667,12 +4734,115 @@
           4
         ],
         "time": "21:36:25"
+      }
+    ],
+    "updated_at": "2026-09-24T12:53:10.245Z"
+  },
+  "lc79_txmd5": {
+    "channel_id": "lc79_txmd5",
+    "platform": "Game",
+    "game_name": "Tài Xỉu",
+    "game_type": "taixiu",
+    "epochs": 176,
+    "total_bets": 164,
+    "total_wins": 75,
+    "total_losses": 89,
+    "win_rate": 45.7,
+    "current_streak": 9,
+    "max_streak": 9,
+    "weights": {
+      "markov": 0.12,
+      "pattern": 0.38,
+      "dice_matrix": 0.38,
+      "mean_reversion": 0.12
+    },
+    "learning_rate": 0.05,
+    "last_prediction": {
+      "phien_target": "7062057",
+      "prediction": "XỈU",
+      "confidence": 77,
+      "game_type": "taixiu",
+      "dice_analysis": {
+        "gameType": "taixiu",
+        "diceCounts": {
+          "1": 28,
+          "2": 22,
+          "3": 20,
+          "4": 25,
+          "5": 34,
+          "6": 21
+        },
+        "dicePercentages": {
+          "1": 18.7,
+          "2": 14.7,
+          "3": 13.3,
+          "4": 16.7,
+          "5": 22.7,
+          "6": 14
+        },
+        "hotFace": 5,
+        "hotFaceRate": 22.7,
+        "secondHot": 1,
+        "secondHotRate": 18.7,
+        "coldFace": 3,
+        "coldFaceRate": 13.3,
+        "topPair": "4-5",
+        "topPairRate": 20,
+        "tripleRate": 0,
+        "predictedDices": [
+          1,
+          4,
+          5
+        ],
+        "predictedSum": 10,
+        "sumFreq": {
+          "4": 1,
+          "5": 1,
+          "6": 3,
+          "7": 2,
+          "8": 4,
+          "9": 5,
+          "10": 8,
+          "11": 4,
+          "12": 10,
+          "13": 5,
+          "14": 5,
+          "15": 1,
+          "16": 1
+        },
+        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (22.7%), mặt ⚀ 3 đang lạnh (13.3%). Cặp số tiềm năng: 4-5."
+      },
+      "predicted_dices": [
+        1,
+        4,
+        5
+      ],
+      "predicted_sum": 10,
+      "created_at": "2026-09-24T12:53:01.199Z"
+    },
+    "recent_matches": [
+      {
+        "phien": "7041835",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          4,
+          5
+        ],
+        "actual_dices": [
+          3,
+          2,
+          3
+        ],
+        "time": "22:44:47"
       },
       {
-        "phien": "6905737",
-        "predicted": "TÀI",
+        "phien": "7041834",
+        "predicted": "XỈU",
         "actual": "XỈU",
-        "is_win": false,
+        "is_win": true,
         "predicted_dices": [
           1,
           4,
@@ -4680,32 +4850,15 @@
         ],
         "actual_dices": [
           1,
-          2,
-          6
+          1,
+          2
         ],
-        "time": "21:35:15"
+        "time": "22:43:57"
       },
       {
-        "phien": "6905736",
-        "predicted": "TÀI",
+        "phien": "7041833",
+        "predicted": "XỈU",
         "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          3,
-          1,
-          5
-        ],
-        "time": "21:34:05"
-      },
-      {
-        "phien": "6905735",
-        "predicted": "TÀI",
-        "actual": "TÀI",
         "is_win": true,
         "predicted_dices": [
           1,
@@ -4715,112 +4868,27 @@
         "actual_dices": [
           4,
           5,
-          2
+          1
         ],
-        "time": "21:32:55"
+        "time": "22:43:07"
       },
       {
-        "phien": "6905734",
+        "phien": "7041832",
         "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
+        "actual": "XỈU",
+        "is_win": true,
         "predicted_dices": [
           1,
-          2,
+          4,
           5
         ],
         "actual_dices": [
-          5,
-          4,
-          4
+          3,
+          3,
+          2
         ],
-        "time": "21:31:44"
-      }
-    ],
-    "updated_at": "2026-09-12T14:48:07.447Z"
-  },
-  "lc79_txmd5": {
-    "channel_id": "lc79_txmd5",
-    "platform": "Game",
-    "game_name": "Tài Xỉu",
-    "game_type": "taixiu",
-    "epochs": 172,
-    "total_bets": 160,
-    "total_wins": 71,
-    "total_losses": 89,
-    "win_rate": 44.4,
-    "current_streak": 5,
-    "max_streak": 5,
-    "weights": {
-      "markov": 0.12,
-      "pattern": 0.42,
-      "dice_matrix": 0.35,
-      "mean_reversion": 0.12
-    },
-    "learning_rate": 0.05,
-    "last_prediction": {
-      "phien_target": "7041832",
-      "prediction": "XỈU",
-      "confidence": 81,
-      "game_type": "taixiu",
-      "dice_analysis": {
-        "gameType": "taixiu",
-        "diceCounts": {
-          "1": 29,
-          "2": 19,
-          "3": 21,
-          "4": 24,
-          "5": 35,
-          "6": 22
-        },
-        "dicePercentages": {
-          "1": 19.3,
-          "2": 12.7,
-          "3": 14,
-          "4": 16,
-          "5": 23.3,
-          "6": 14.7
-        },
-        "hotFace": 5,
-        "hotFaceRate": 23.3,
-        "secondHot": 1,
-        "secondHotRate": 19.3,
-        "coldFace": 2,
-        "coldFaceRate": 12.7,
-        "topPair": "3-5",
-        "topPairRate": 16,
-        "tripleRate": 0,
-        "predictedDices": [
-          1,
-          4,
-          5
-        ],
-        "predictedSum": 10,
-        "sumFreq": {
-          "5": 1,
-          "6": 3,
-          "7": 3,
-          "8": 2,
-          "9": 6,
-          "10": 9,
-          "11": 5,
-          "12": 9,
-          "13": 5,
-          "14": 5,
-          "15": 1,
-          "16": 1
-        },
-        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (23.3%), mặt ⚀ 2 đang lạnh (12.7%). Cặp số tiềm năng: 3-5."
+        "time": "22:42:17"
       },
-      "predicted_dices": [
-        1,
-        4,
-        5
-      ],
-      "predicted_sum": 10,
-      "created_at": "2026-09-12T15:41:22.416Z"
-    },
-    "recent_matches": [
       {
         "phien": "7041831",
         "predicted": "XỈU",
@@ -5007,87 +5075,19 @@
           4
         ],
         "time": "21:40:26"
-      },
-      {
-        "phien": "7041758",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          4,
-          1,
-          6
-        ],
-        "time": "21:39:36"
-      },
-      {
-        "phien": "7041757",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          1,
-          1,
-          5
-        ],
-        "time": "21:38:46"
-      },
-      {
-        "phien": "7041756",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          1,
-          4,
-          4
-        ],
-        "time": "21:37:56"
-      },
-      {
-        "phien": "7041755",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          1,
-          5,
-          6
-        ],
-        "time": "21:37:05"
       }
     ],
-    "updated_at": "2026-09-12T15:41:22.416Z"
+    "updated_at": "2026-09-12T15:44:47.868Z"
   },
   "lc79_xocdia": {
     "channel_id": "lc79_xocdia",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 208,
-    "total_bets": 196,
+    "epochs": 214,
+    "total_bets": 202,
     "total_wins": 0,
-    "total_losses": 196,
+    "total_losses": 202,
     "win_rate": 0,
     "current_streak": 0,
     "max_streak": 0,
@@ -5099,30 +5099,30 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "7933509",
+      "phien_target": "7964402",
       "prediction": "LẺ",
       "confidence": 77,
       "game_type": "xocdia",
       "dice_analysis": {
         "gameType": "xocdia",
         "viStats": {
-          "tu_trang": 27,
-          "ba_trang": 14,
+          "tu_trang": 26,
+          "ba_trang": 16,
           "sap_doi": 0,
-          "ba_do": 7,
+          "ba_do": 6,
           "tu_do": 2
         },
         "viPercentages": {
-          "tu_trang": 54,
-          "ba_trang": 28,
+          "tu_trang": 52,
+          "ba_trang": 32,
           "sap_doi": 0,
-          "ba_do": 14,
+          "ba_do": 12,
           "tu_do": 4
         },
         "topVi": "3 Trắng - 1 Đỏ",
-        "topProb": 28,
+        "topProb": 32,
         "predictedVi": "3 Trắng - 1 Đỏ",
-        "summary": "Vị chủ đạo: 3 Trắng - 1 Đỏ (chiếm 28% các phiên gần đây)."
+        "summary": "Vị chủ đạo: 3 Trắng - 1 Đỏ (chiếm 32% các phiên gần đây)."
       },
       "predicted_dices": [
         4,
@@ -5130,9 +5130,111 @@
         3
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:12.525Z"
+      "created_at": "2026-09-24T12:53:01.302Z"
     },
     "recent_matches": [
+      {
+        "phien": "7933514",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:44:32"
+      },
+      {
+        "phien": "7933513",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:43:57"
+      },
+      {
+        "phien": "7933512",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:43:27"
+      },
+      {
+        "phien": "7933511",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:42:52"
+      },
+      {
+        "phien": "7933510",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:42:22"
+      },
+      {
+        "phien": "7933509",
+        "predicted": "LẺ",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          4,
+          5,
+          3
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "22:41:47"
+      },
       {
         "phien": "7933412",
         "predicted": "LẺ",
@@ -5285,121 +5387,19 @@
           3
         ],
         "time": "21:43:31"
-      },
-      {
-        "phien": "7933403",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:43:01"
-      },
-      {
-        "phien": "7933402",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:42:26"
-      },
-      {
-        "phien": "7933401",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:41:51"
-      },
-      {
-        "phien": "7933400",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:41:21"
-      },
-      {
-        "phien": "7933399",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:40:46"
-      },
-      {
-        "phien": "7933398",
-        "predicted": "LẺ",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          4,
-          5,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:40:11"
       }
     ],
-    "updated_at": "2026-09-12T14:47:57.454Z"
+    "updated_at": "2026-09-12T15:44:32.846Z"
   },
   "betvip_tx": {
     "channel_id": "betvip_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 166,
-    "total_bets": 154,
-    "total_wins": 77,
-    "total_losses": 77,
+    "epochs": 170,
+    "total_bets": 158,
+    "total_wins": 79,
+    "total_losses": 79,
     "win_rate": 50,
     "current_streak": 0,
     "max_streak": 13,
@@ -5411,69 +5411,138 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "7115616",
+      "phien_target": "7134196",
       "prediction": "XỈU",
-      "confidence": 80,
+      "confidence": 77,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 25,
-          "2": 27,
-          "3": 21,
-          "4": 37,
+          "1": 24,
+          "2": 26,
+          "3": 19,
+          "4": 35,
           "5": 21,
-          "6": 19
+          "6": 25
         },
         "dicePercentages": {
-          "1": 16.7,
-          "2": 18,
-          "3": 14,
-          "4": 24.7,
+          "1": 16,
+          "2": 17.3,
+          "3": 12.7,
+          "4": 23.3,
           "5": 14,
-          "6": 12.7
+          "6": 16.7
         },
         "hotFace": 4,
-        "hotFaceRate": 24.7,
+        "hotFaceRate": 23.3,
         "secondHot": 2,
-        "secondHotRate": 18,
-        "coldFace": 6,
+        "secondHotRate": 17.3,
+        "coldFace": 3,
         "coldFaceRate": 12.7,
-        "topPair": "4-5",
-        "topPairRate": 18,
-        "tripleRate": 2,
+        "topPair": "1-4",
+        "topPairRate": 16,
+        "tripleRate": 4,
         "predictedDices": [
+          2,
+          4,
+          6
+        ],
+        "predictedSum": 12,
+        "sumFreq": {
+          "4": 1,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "8": 5,
+          "9": 9,
+          "10": 6,
+          "11": 4,
+          "12": 7,
+          "13": 5,
+          "14": 5,
+          "16": 1,
+          "17": 1,
+          "18": 1
+        },
+        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (23.3%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 1-4."
+      },
+      "predicted_dices": [
+        2,
+        4,
+        6
+      ],
+      "predicted_sum": 12,
+      "created_at": "2026-09-24T12:53:01.102Z"
+    },
+    "recent_matches": [
+      {
+        "phien": "7115619",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
           1,
           2,
           4
         ],
-        "predictedSum": 7,
-        "sumFreq": {
-          "4": 1,
-          "5": 3,
-          "6": 3,
-          "7": 1,
-          "8": 5,
-          "9": 10,
-          "10": 3,
-          "11": 6,
-          "12": 7,
-          "13": 4,
-          "14": 5,
-          "16": 1,
-          "17": 1
-        },
-        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (24.7%), mặt ⚀ 6 đang lạnh (12.7%). Cặp số tiềm năng: 4-5."
+        "actual_dices": [
+          6,
+          6,
+          6
+        ],
+        "time": "22:44:37"
       },
-      "predicted_dices": [
-        1,
-        2,
-        4
-      ],
-      "predicted_sum": 7,
-      "created_at": "2026-09-12T15:41:12.624Z"
-    },
-    "recent_matches": [
+      {
+        "phien": "7115618",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          4
+        ],
+        "actual_dices": [
+          5,
+          1,
+          4
+        ],
+        "time": "22:43:42"
+      },
+      {
+        "phien": "7115617",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          4
+        ],
+        "actual_dices": [
+          5,
+          5,
+          2
+        ],
+        "time": "22:42:42"
+      },
+      {
+        "phien": "7115616",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          4
+        ],
+        "actual_dices": [
+          2,
+          6,
+          2
+        ],
+        "time": "22:41:47"
+      },
       {
         "phien": "7115557",
         "predicted": "TÀI",
@@ -5660,161 +5729,178 @@
           6
         ],
         "time": "21:38:16"
-      },
-      {
-        "phien": "7115546",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          1,
-          4,
-          4
-        ],
-        "time": "21:37:21"
-      },
-      {
-        "phien": "7115545",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          4,
-          3,
-          5
-        ],
-        "time": "21:36:26"
-      },
-      {
-        "phien": "7115544",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          3,
-          1,
-          1
-        ],
-        "time": "21:35:30"
-      },
-      {
-        "phien": "7115543",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          6,
-          2,
-          4
-        ],
-        "time": "21:34:35"
       }
     ],
-    "updated_at": "2026-09-12T14:47:27.467Z"
+    "updated_at": "2026-09-12T15:44:37.896Z"
   },
   "betvip_txmd5": {
     "channel_id": "betvip_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 172,
-    "total_bets": 160,
+    "epochs": 177,
+    "total_bets": 165,
     "total_wins": 88,
-    "total_losses": 72,
-    "win_rate": 55,
+    "total_losses": 77,
+    "win_rate": 53.3,
     "current_streak": 0,
     "max_streak": 4,
     "weights": {
       "markov": 0.13,
-      "pattern": 0.44,
-      "dice_matrix": 0.3,
+      "pattern": 0.49,
+      "dice_matrix": 0.24,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "7036283",
+      "phien_target": "7059697",
       "prediction": "TÀI",
-      "confidence": 80,
+      "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
           "1": 27,
-          "2": 25,
-          "3": 23,
-          "4": 19,
-          "5": 26,
-          "6": 30
+          "2": 26,
+          "3": 25,
+          "4": 18,
+          "5": 25,
+          "6": 29
         },
         "dicePercentages": {
           "1": 18,
-          "2": 16.7,
-          "3": 15.3,
-          "4": 12.7,
-          "5": 17.3,
-          "6": 20
+          "2": 17.3,
+          "3": 16.7,
+          "4": 12,
+          "5": 16.7,
+          "6": 19.3
         },
         "hotFace": 6,
-        "hotFaceRate": 20,
+        "hotFaceRate": 19.3,
         "secondHot": 1,
         "secondHotRate": 18,
         "coldFace": 4,
-        "coldFaceRate": 12.7,
-        "topPair": "5-6",
+        "coldFaceRate": 12,
+        "topPair": "2-3",
         "topPairRate": 20,
         "tripleRate": 6,
         "predictedDices": [
           1,
-          5,
+          2,
           6
         ],
-        "predictedSum": 12,
+        "predictedSum": 9,
         "sumFreq": {
           "3": 2,
           "5": 1,
-          "6": 4,
+          "6": 5,
           "7": 4,
           "8": 1,
           "9": 5,
           "10": 6,
           "11": 6,
-          "12": 6,
-          "13": 2,
-          "14": 9,
+          "12": 5,
+          "13": 3,
+          "14": 8,
           "16": 2,
           "17": 2
         },
-        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (20%), mặt ⚀ 4 đang lạnh (12.7%). Cặp số tiềm năng: 5-6."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (19.3%), mặt ⚀ 4 đang lạnh (12%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         1,
-        5,
+        2,
         6
       ],
-      "predicted_sum": 12,
-      "created_at": "2026-09-12T15:41:22.499Z"
+      "predicted_sum": 9,
+      "created_at": "2026-09-24T12:53:10.271Z"
     },
     "recent_matches": [
+      {
+        "phien": "7059696",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          4,
+          1,
+          5
+        ],
+        "time": "19:53:10"
+      },
+      {
+        "phien": "7036286",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          3,
+          6,
+          4
+        ],
+        "time": "22:44:43"
+      },
+      {
+        "phien": "7036285",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          2,
+          1,
+          6
+        ],
+        "time": "22:43:52"
+      },
+      {
+        "phien": "7036284",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          5,
+          4,
+          3
+        ],
+        "time": "22:43:03"
+      },
+      {
+        "phien": "7036283",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          5,
+          6
+        ],
+        "actual_dices": [
+          3,
+          2,
+          1
+        ],
+        "time": "22:42:12"
+      },
       {
         "phien": "7036282",
         "predicted": "XỈU",
@@ -5984,176 +6070,142 @@
           5
         ],
         "time": "21:41:16"
-      },
-      {
-        "phien": "7036210",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          3,
-          1,
-          6
-        ],
-        "time": "21:40:26"
-      },
-      {
-        "phien": "7036209",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          2,
-          2,
-          2
-        ],
-        "time": "21:39:36"
-      },
-      {
-        "phien": "7036208",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          3,
-          2,
-          5
-        ],
-        "time": "21:38:41"
-      },
-      {
-        "phien": "7036207",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          5,
-          5,
-          6
-        ],
-        "time": "21:37:51"
-      },
-      {
-        "phien": "7036206",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          6,
-          5,
-          3
-        ],
-        "time": "21:37:01"
       }
     ],
-    "updated_at": "2026-09-12T15:41:22.498Z"
+    "updated_at": "2026-09-24T12:53:10.271Z"
   },
   "son789_tx": {
     "channel_id": "son789_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 152,
-    "total_bets": 140,
-    "total_wins": 81,
+    "epochs": 155,
+    "total_bets": 143,
+    "total_wins": 84,
     "total_losses": 59,
-    "win_rate": 57.9,
-    "current_streak": 1,
+    "win_rate": 58.7,
+    "current_streak": 4,
     "max_streak": 6,
     "weights": {
-      "markov": 0.22,
-      "pattern": 0.44,
-      "dice_matrix": 0.2,
-      "mean_reversion": 0.15
+      "markov": 0.2,
+      "pattern": 0.42,
+      "dice_matrix": 0.24,
+      "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1683324",
+      "phien_target": "1697649",
       "prediction": "XỈU",
-      "confidence": 76,
+      "confidence": 77,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 20,
-          "2": 26,
-          "3": 23,
-          "4": 29,
+          "1": 24,
+          "2": 23,
+          "3": 25,
+          "4": 27,
           "5": 23,
-          "6": 29
+          "6": 28
         },
         "dicePercentages": {
-          "1": 13.3,
-          "2": 17.3,
-          "3": 15.3,
-          "4": 19.3,
+          "1": 16,
+          "2": 15.3,
+          "3": 16.7,
+          "4": 18,
           "5": 15.3,
-          "6": 19.3
+          "6": 18.7
         },
-        "hotFace": 4,
-        "hotFaceRate": 19.3,
-        "secondHot": 6,
-        "secondHotRate": 19.3,
-        "coldFace": 1,
-        "coldFaceRate": 13.3,
+        "hotFace": 6,
+        "hotFaceRate": 18.7,
+        "secondHot": 4,
+        "secondHotRate": 18,
+        "coldFace": 5,
+        "coldFaceRate": 15.3,
         "topPair": "4-6",
-        "topPairRate": 20,
+        "topPairRate": 18,
         "tripleRate": 2,
         "predictedDices": [
+          3,
+          4,
+          6
+        ],
+        "predictedSum": 13,
+        "sumFreq": {
+          "6": 2,
+          "7": 4,
+          "8": 5,
+          "9": 6,
+          "10": 6,
+          "11": 8,
+          "12": 7,
+          "13": 4,
+          "14": 3,
+          "15": 4,
+          "16": 1
+        },
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (18.7%), mặt ⚀ 5 đang lạnh (15.3%). Cặp số tiềm năng: 4-6."
+      },
+      "predicted_dices": [
+        3,
+        4,
+        6
+      ],
+      "predicted_sum": 13,
+      "created_at": "2026-09-24T12:53:00.772Z"
+    },
+    "recent_matches": [
+      {
+        "phien": "1683326",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
           2,
           4,
           6
         ],
-        "predictedSum": 12,
-        "sumFreq": {
-          "6": 2,
-          "7": 4,
-          "8": 4,
-          "9": 4,
-          "10": 7,
-          "11": 9,
-          "12": 7,
-          "13": 5,
-          "14": 2,
-          "15": 4,
-          "16": 2
-        },
-        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (19.3%), mặt ⚀ 1 đang lạnh (13.3%). Cặp số tiềm năng: 4-6."
+        "actual_dices": [
+          1,
+          3,
+          4
+        ],
+        "time": "22:44:07"
       },
-      "predicted_dices": [
-        2,
-        4,
-        6
-      ],
-      "predicted_sum": 12,
-      "created_at": "2026-09-12T15:41:13.475Z"
-    },
-    "recent_matches": [
+      {
+        "phien": "1683325",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          4,
+          6
+        ],
+        "actual_dices": [
+          1,
+          6,
+          3
+        ],
+        "time": "22:42:57"
+      },
+      {
+        "phien": "1683324",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          4,
+          6
+        ],
+        "actual_dices": [
+          5,
+          1,
+          3
+        ],
+        "time": "22:41:47"
+      },
       {
         "phien": "1683278",
         "predicted": "XỈU",
@@ -6357,110 +6409,59 @@
           1
         ],
         "time": "21:35:20"
-      },
-      {
-        "phien": "1683266",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          1,
-          6
-        ],
-        "time": "21:34:10"
-      },
-      {
-        "phien": "1683265",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          3,
-          5,
-          4
-        ],
-        "time": "21:33:00"
-      },
-      {
-        "phien": "1683264",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          3,
-          6
-        ],
-        "time": "21:31:50"
       }
     ],
-    "updated_at": "2026-09-12T14:48:07.419Z"
+    "updated_at": "2026-09-12T15:44:07.870Z"
   },
   "son789_txmd5": {
     "channel_id": "son789_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 153,
-    "total_bets": 141,
-    "total_wins": 68,
-    "total_losses": 73,
-    "win_rate": 48.2,
-    "current_streak": 0,
+    "epochs": 156,
+    "total_bets": 144,
+    "total_wins": 70,
+    "total_losses": 74,
+    "win_rate": 48.6,
+    "current_streak": 1,
     "max_streak": 4,
     "weights": {
       "markov": 0.16,
-      "pattern": 0.45,
-      "dice_matrix": 0.26,
+      "pattern": 0.44,
+      "dice_matrix": 0.27,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1683506",
-      "prediction": "XỈU",
-      "confidence": 80,
+      "phien_target": "1697830",
+      "prediction": "TÀI",
+      "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 29,
-          "2": 21,
-          "3": 27,
-          "4": 29,
+          "1": 27,
+          "2": 23,
+          "3": 24,
+          "4": 28,
           "5": 24,
-          "6": 20
+          "6": 24
         },
         "dicePercentages": {
-          "1": 19.3,
-          "2": 14,
-          "3": 18,
-          "4": 19.3,
+          "1": 18,
+          "2": 15.3,
+          "3": 16,
+          "4": 18.7,
           "5": 16,
-          "6": 13.3
+          "6": 16
         },
-        "hotFace": 1,
-        "hotFaceRate": 19.3,
-        "secondHot": 4,
-        "secondHotRate": 19.3,
-        "coldFace": 6,
-        "coldFaceRate": 13.3,
-        "topPair": "4-5",
+        "hotFace": 4,
+        "hotFaceRate": 18.7,
+        "secondHot": 1,
+        "secondHotRate": 18,
+        "coldFace": 2,
+        "coldFaceRate": 15.3,
+        "topPair": "2-3",
         "topPairRate": 18,
         "tripleRate": 2,
         "predictedDices": [
@@ -6475,17 +6476,18 @@
           "5": 1,
           "6": 4,
           "7": 4,
-          "8": 2,
-          "9": 6,
-          "10": 10,
+          "8": 3,
+          "9": 5,
+          "10": 9,
           "11": 4,
-          "12": 3,
+          "12": 1,
           "13": 6,
-          "14": 5,
+          "14": 6,
           "15": 2,
-          "16": 1
+          "16": 1,
+          "17": 2
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (19.3%), mặt ⚀ 6 đang lạnh (13.3%). Cặp số tiềm năng: 4-5."
+        "summary": "Mặt ⚅ 4 đang có tần suất cao nhất (18.7%), mặt ⚀ 2 đang lạnh (15.3%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         1,
@@ -6493,9 +6495,60 @@
         4
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:12.594Z"
+      "created_at": "2026-09-24T12:53:00.927Z"
     },
     "recent_matches": [
+      {
+        "phien": "1683508",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          1,
+          5
+        ],
+        "time": "22:44:27"
+      },
+      {
+        "phien": "1683507",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          4,
+          6
+        ],
+        "time": "22:43:17"
+      },
+      {
+        "phien": "1683506",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          2,
+          2
+        ],
+        "time": "22:42:07"
+      },
       {
         "phien": "1683459",
         "predicted": "TÀI",
@@ -6699,144 +6752,143 @@
           3
         ],
         "time": "21:34:30"
-      },
-      {
-        "phien": "1683447",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          6,
-          3,
-          4
-        ],
-        "time": "21:33:20"
-      },
-      {
-        "phien": "1683446",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          6,
-          4,
-          3
-        ],
-        "time": "21:32:10"
-      },
-      {
-        "phien": "1683445",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          3,
-          6,
-          4
-        ],
-        "time": "21:30:59"
       }
     ],
-    "updated_at": "2026-09-12T14:47:17.384Z"
+    "updated_at": "2026-09-12T15:44:27.788Z"
   },
   "ta28_tx": {
     "channel_id": "ta28_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 153,
-    "total_bets": 141,
-    "total_wins": 86,
+    "epochs": 156,
+    "total_bets": 144,
+    "total_wins": 89,
     "total_losses": 55,
-    "win_rate": 61,
-    "current_streak": 5,
+    "win_rate": 61.8,
+    "current_streak": 8,
     "max_streak": 10,
     "weights": {
       "markov": 0.13,
-      "pattern": 0.42,
-      "dice_matrix": 0.32,
+      "pattern": 0.4,
+      "dice_matrix": 0.35,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1583895",
-      "prediction": "TÀI",
-      "confidence": 81,
+      "phien_target": "1598562",
+      "prediction": "XỈU",
+      "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
           "1": 21,
-          "2": 27,
-          "3": 27,
-          "4": 18,
+          "2": 30,
+          "3": 26,
+          "4": 20,
           "5": 28,
-          "6": 29
+          "6": 25
         },
         "dicePercentages": {
           "1": 14,
-          "2": 18,
-          "3": 18,
-          "4": 12,
+          "2": 20,
+          "3": 17.3,
+          "4": 13.3,
           "5": 18.7,
-          "6": 19.3
+          "6": 16.7
         },
-        "hotFace": 6,
-        "hotFaceRate": 19.3,
+        "hotFace": 2,
+        "hotFaceRate": 20,
         "secondHot": 5,
         "secondHotRate": 18.7,
         "coldFace": 4,
-        "coldFaceRate": 12,
-        "topPair": "5-6",
-        "topPairRate": 24,
+        "coldFaceRate": 13.3,
+        "topPair": "4-5",
+        "topPairRate": 18,
         "tripleRate": 6,
         "predictedDices": [
           2,
-          5,
-          6
+          3,
+          5
         ],
-        "predictedSum": 13,
+        "predictedSum": 10,
         "sumFreq": {
           "4": 1,
           "5": 2,
           "6": 3,
-          "7": 3,
+          "7": 4,
           "9": 7,
           "10": 7,
-          "11": 6,
+          "11": 7,
           "12": 5,
           "13": 8,
-          "14": 2,
+          "14": 1,
           "15": 3,
-          "17": 1,
           "18": 2
         },
-        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (19.3%), mặt ⚀ 4 đang lạnh (12%). Cặp số tiềm năng: 5-6."
+        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (20%), mặt ⚀ 4 đang lạnh (13.3%). Cặp số tiềm năng: 4-5."
       },
       "predicted_dices": [
         2,
-        5,
-        6
+        3,
+        5
       ],
-      "predicted_sum": 13,
-      "created_at": "2026-09-12T15:41:12.947Z"
+      "predicted_sum": 10,
+      "created_at": "2026-09-24T12:53:01.238Z"
     },
     "recent_matches": [
+      {
+        "phien": "1583897",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          5,
+          3,
+          4
+        ],
+        "time": "22:44:17"
+      },
+      {
+        "phien": "1583896",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          2,
+          5,
+          5
+        ],
+        "time": "22:43:07"
+      },
+      {
+        "phien": "1583895",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          5,
+          6
+        ],
+        "actual_dices": [
+          5,
+          4,
+          2
+        ],
+        "time": "22:42:02"
+      },
       {
         "phien": "1583848",
         "predicted": "TÀI",
@@ -7040,144 +7092,143 @@
           6
         ],
         "time": "21:34:20"
-      },
-      {
-        "phien": "1583836",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          5,
-          6
-        ],
-        "actual_dices": [
-          4,
-          2,
-          4
-        ],
-        "time": "21:33:10"
-      },
-      {
-        "phien": "1583835",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          5,
-          6
-        ],
-        "actual_dices": [
-          3,
-          6,
-          4
-        ],
-        "time": "21:32:00"
-      },
-      {
-        "phien": "1583834",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          5,
-          6
-        ],
-        "actual_dices": [
-          2,
-          3,
-          1
-        ],
-        "time": "21:30:49"
       }
     ],
-    "updated_at": "2026-09-12T14:47:12.511Z"
+    "updated_at": "2026-09-12T15:44:17.875Z"
   },
   "ta28_txmd5": {
     "channel_id": "ta28_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 153,
-    "total_bets": 141,
-    "total_wins": 66,
-    "total_losses": 75,
-    "win_rate": 46.8,
+    "epochs": 156,
+    "total_bets": 144,
+    "total_wins": 67,
+    "total_losses": 77,
+    "win_rate": 46.5,
     "current_streak": 1,
     "max_streak": 7,
     "weights": {
-      "markov": 0.22,
+      "markov": 0.23,
       "pattern": 0.45,
-      "dice_matrix": 0.2,
+      "dice_matrix": 0.18,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1577513",
-      "prediction": "TÀI",
-      "confidence": 77,
+      "phien_target": "1592180",
+      "prediction": "XỈU",
+      "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 32,
+          "1": 30,
           "2": 22,
-          "3": 24,
-          "4": 25,
-          "5": 24,
-          "6": 23
+          "3": 27,
+          "4": 22,
+          "5": 22,
+          "6": 27
         },
         "dicePercentages": {
-          "1": 21.3,
+          "1": 20,
           "2": 14.7,
-          "3": 16,
-          "4": 16.7,
-          "5": 16,
-          "6": 15.3
+          "3": 18,
+          "4": 14.7,
+          "5": 14.7,
+          "6": 18
         },
         "hotFace": 1,
-        "hotFaceRate": 21.3,
-        "secondHot": 4,
-        "secondHotRate": 16.7,
-        "coldFace": 2,
+        "hotFaceRate": 20,
+        "secondHot": 3,
+        "secondHotRate": 18,
+        "coldFace": 5,
         "coldFaceRate": 14.7,
-        "topPair": "3-4",
-        "topPairRate": 20,
-        "tripleRate": 2,
+        "topPair": "5-6",
+        "topPairRate": 18,
+        "tripleRate": 4,
         "predictedDices": [
           1,
           3,
-          4
+          6
         ],
-        "predictedSum": 8,
+        "predictedSum": 10,
         "sumFreq": {
           "3": 1,
-          "4": 2,
-          "5": 1,
-          "6": 1,
+          "4": 1,
+          "5": 2,
           "7": 4,
           "8": 8,
           "9": 5,
-          "10": 2,
+          "10": 3,
           "11": 6,
-          "12": 8,
-          "13": 6,
-          "14": 3,
-          "15": 3
+          "12": 7,
+          "13": 5,
+          "14": 4,
+          "15": 4
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (21.3%), mặt ⚀ 2 đang lạnh (14.7%). Cặp số tiềm năng: 3-4."
+        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (20%), mặt ⚀ 5 đang lạnh (14.7%). Cặp số tiềm năng: 5-6."
       },
       "predicted_dices": [
         1,
         3,
-        4
+        6
       ],
-      "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:12.705Z"
+      "predicted_sum": 10,
+      "created_at": "2026-09-24T12:53:01.275Z"
     },
     "recent_matches": [
+      {
+        "phien": "1577515",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          2,
+          4
+        ],
+        "actual_dices": [
+          6,
+          3,
+          6
+        ],
+        "time": "22:44:37"
+      },
+      {
+        "phien": "1577514",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          3
+        ],
+        "actual_dices": [
+          1,
+          4,
+          6
+        ],
+        "time": "22:43:27"
+      },
+      {
+        "phien": "1577513",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          2,
+          2,
+          1
+        ],
+        "time": "22:42:17"
+      },
       {
         "phien": "1577466",
         "predicted": "XỈU",
@@ -7381,142 +7432,142 @@
           3
         ],
         "time": "21:34:40"
-      },
-      {
-        "phien": "1577454",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          3,
-          2,
-          3
-        ],
-        "time": "21:33:30"
-      },
-      {
-        "phien": "1577453",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          3,
-          2
-        ],
-        "time": "21:32:20"
-      },
-      {
-        "phien": "1577452",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          4,
-          5
-        ],
-        "time": "21:31:09"
       }
     ],
-    "updated_at": "2026-09-12T14:47:32.547Z"
+    "updated_at": "2026-09-12T15:44:37.923Z"
   },
   "luck8_txmd5": {
     "channel_id": "luck8_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 160,
-    "total_bets": 148,
-    "total_wins": 70,
-    "total_losses": 78,
-    "win_rate": 47.3,
-    "current_streak": 0,
+    "epochs": 163,
+    "total_bets": 151,
+    "total_wins": 72,
+    "total_losses": 79,
+    "win_rate": 47.7,
+    "current_streak": 2,
     "max_streak": 4,
     "weights": {
-      "markov": 0.23,
-      "pattern": 0.43,
-      "dice_matrix": 0.2,
+      "markov": 0.22,
+      "pattern": 0.44,
+      "dice_matrix": 0.21,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "2609121362",
-      "prediction": "TÀI",
-      "confidence": 76,
+      "phien_target": "2609130002",
+      "prediction": "XỈU",
+      "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 22,
-          "2": 31,
+          "1": 21,
+          "2": 32,
           "3": 29,
           "4": 23,
-          "5": 24,
-          "6": 21
+          "5": 23,
+          "6": 22
         },
         "dicePercentages": {
-          "1": 14.7,
-          "2": 20.7,
+          "1": 14,
+          "2": 21.3,
           "3": 19.3,
           "4": 15.3,
-          "5": 16,
-          "6": 14
+          "5": 15.3,
+          "6": 14.7
         },
         "hotFace": 2,
-        "hotFaceRate": 20.7,
+        "hotFaceRate": 21.3,
         "secondHot": 3,
         "secondHotRate": 19.3,
-        "coldFace": 6,
+        "coldFace": 1,
         "coldFaceRate": 14,
         "topPair": "2-3",
-        "topPairRate": 30,
+        "topPairRate": 28,
         "tripleRate": 0,
         "predictedDices": [
           2,
           3,
-          5
+          4
         ],
-        "predictedSum": 10,
+        "predictedSum": 9,
         "sumFreq": {
-          "6": 6,
+          "6": 5,
           "7": 1,
           "8": 6,
-          "9": 10,
+          "9": 11,
           "10": 6,
-          "11": 4,
-          "12": 6,
+          "11": 5,
+          "12": 5,
           "13": 6,
           "14": 3,
           "15": 1,
           "17": 1
         },
-        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (20.7%), mặt ⚀ 6 đang lạnh (14%). Cặp số tiềm năng: 2-3."
+        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (21.3%), mặt ⚀ 1 đang lạnh (14%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         2,
         3,
-        5
+        4
       ],
-      "predicted_sum": 10,
-      "created_at": "2026-09-12T15:41:13.047Z"
+      "predicted_sum": 9,
+      "created_at": "2026-09-12T17:01:28.197Z"
     },
     "recent_matches": [
+      {
+        "phien": "2609121364",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          3,
+          4
+        ],
+        "actual_dices": [
+          3,
+          3,
+          6
+        ],
+        "time": "22:44:03"
+      },
+      {
+        "phien": "2609121363",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          5,
+          2
+        ],
+        "time": "22:43:03"
+      },
+      {
+        "phien": "2609121362",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          3,
+          5
+        ],
+        "actual_dices": [
+          3,
+          1,
+          4
+        ],
+        "time": "22:42:03"
+      },
       {
         "phien": "2609121308",
         "predicted": "XỈU",
@@ -7720,84 +7771,33 @@
           1
         ],
         "time": "21:37:01"
-      },
-      {
-        "phien": "2609121296",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          3,
-          6
-        ],
-        "actual_dices": [
-          2,
-          5,
-          5
-        ],
-        "time": "21:36:00"
-      },
-      {
-        "phien": "2609121295",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          2,
-          5,
-          6
-        ],
-        "time": "21:35:00"
-      },
-      {
-        "phien": "2609121294",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          3,
-          4
-        ],
-        "actual_dices": [
-          3,
-          1,
-          2
-        ],
-        "time": "21:34:00"
       }
     ],
-    "updated_at": "2026-09-12T14:48:02.754Z"
+    "updated_at": "2026-09-12T15:44:03.124Z"
   },
   "luck8_sicbo40": {
     "channel_id": "luck8_sicbo40",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 191,
-    "total_bets": 179,
+    "epochs": 196,
+    "total_bets": 184,
     "total_wins": 83,
-    "total_losses": 96,
-    "win_rate": 46.4,
-    "current_streak": 1,
+    "total_losses": 101,
+    "win_rate": 45.1,
+    "current_streak": 0,
     "max_streak": 4,
     "weights": {
-      "markov": 0.24,
-      "pattern": 0.45,
-      "dice_matrix": 0.17,
+      "markov": 0.25,
+      "pattern": 0.46,
+      "dice_matrix": 0.15,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "202609122043",
-      "prediction": "TÀI",
-      "confidence": 77,
+      "phien_target": "202609130003",
+      "prediction": "XỈU",
+      "confidence": 80,
       "game_type": "sicbo",
       "dice_analysis": {
         "gameType": "taixiu",
@@ -7805,21 +7805,21 @@
           "1": 28,
           "2": 28,
           "3": 19,
-          "4": 27,
-          "5": 20,
-          "6": 28
+          "4": 25,
+          "5": 21,
+          "6": 29
         },
         "dicePercentages": {
           "1": 18.7,
           "2": 18.7,
           "3": 12.7,
-          "4": 18,
-          "5": 13.3,
-          "6": 18.7
+          "4": 16.7,
+          "5": 14,
+          "6": 19.3
         },
-        "hotFace": 1,
-        "hotFaceRate": 18.7,
-        "secondHot": 2,
+        "hotFace": 6,
+        "hotFaceRate": 19.3,
+        "secondHot": 1,
         "secondHotRate": 18.7,
         "coldFace": 3,
         "coldFaceRate": 12.7,
@@ -7836,18 +7836,18 @@
           "4": 2,
           "5": 1,
           "6": 2,
-          "7": 3,
+          "7": 2,
           "8": 4,
           "9": 8,
-          "10": 5,
-          "11": 10,
+          "10": 7,
+          "11": 9,
           "12": 2,
-          "13": 4,
-          "14": 6,
+          "13": 3,
+          "14": 7,
           "15": 1,
           "16": 2
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (18.7%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 1-2."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (19.3%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 1-2."
       },
       "predicted_dices": [
         1,
@@ -7855,9 +7855,94 @@
         6
       ],
       "predicted_sum": 9,
-      "created_at": "2026-09-12T15:41:22.819Z"
+      "created_at": "2026-09-12T17:01:28.151Z"
     },
     "recent_matches": [
+      {
+        "phien": "202609122047",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          4,
+          2,
+          3
+        ],
+        "time": "22:44:48"
+      },
+      {
+        "phien": "202609122046",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          5,
+          5,
+          4
+        ],
+        "time": "22:44:08"
+      },
+      {
+        "phien": "202609122045",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          1,
+          2,
+          6
+        ],
+        "time": "22:43:23"
+      },
+      {
+        "phien": "202609122044",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          5,
+          4,
+          2
+        ],
+        "time": "22:42:48"
+      },
+      {
+        "phien": "202609122043",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          2,
+          6
+        ],
+        "actual_dices": [
+          1,
+          2,
+          3
+        ],
+        "time": "22:42:07"
+      },
       {
         "phien": "202609122042",
         "predicted": "TÀI",
@@ -8027,146 +8112,61 @@
           6
         ],
         "time": "21:42:52"
-      },
-      {
-        "phien": "202609121953",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          5,
-          4,
-          1
-        ],
-        "time": "21:42:07"
-      },
-      {
-        "phien": "202609121952",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          4,
-          4,
-          5
-        ],
-        "time": "21:41:32"
-      },
-      {
-        "phien": "202609121951",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          5,
-          2,
-          4
-        ],
-        "time": "21:40:47"
-      },
-      {
-        "phien": "202609121950",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          2,
-          5
-        ],
-        "time": "21:40:06"
-      },
-      {
-        "phien": "202609121949",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          2,
-          4,
-          6
-        ],
-        "actual_dices": [
-          2,
-          4,
-          5
-        ],
-        "time": "21:39:26"
       }
     ],
-    "updated_at": "2026-09-12T15:41:22.819Z"
+    "updated_at": "2026-09-12T15:44:48.206Z"
   },
   "xocdia88_txmd5": {
     "channel_id": "xocdia88_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 156,
-    "total_bets": 144,
-    "total_wins": 69,
-    "total_losses": 75,
-    "win_rate": 47.9,
-    "current_streak": 2,
+    "epochs": 160,
+    "total_bets": 148,
+    "total_wins": 72,
+    "total_losses": 76,
+    "win_rate": 48.6,
+    "current_streak": 1,
     "max_streak": 7,
     "weights": {
-      "markov": 0.17,
+      "markov": 0.16,
       "pattern": 0.44,
-      "dice_matrix": 0.26,
+      "dice_matrix": 0.28,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1731159",
+      "phien_target": "1747034",
       "prediction": "XỈU",
       "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 30,
-          "2": 22,
+          "1": 28,
+          "2": 25,
           "3": 31,
-          "4": 25,
-          "5": 21,
-          "6": 21
+          "4": 28,
+          "5": 15,
+          "6": 23
         },
         "dicePercentages": {
-          "1": 20,
-          "2": 14.7,
+          "1": 18.7,
+          "2": 16.7,
           "3": 20.7,
-          "4": 16.7,
-          "5": 14,
-          "6": 14
+          "4": 18.7,
+          "5": 10,
+          "6": 15.3
         },
         "hotFace": 3,
         "hotFaceRate": 20.7,
         "secondHot": 1,
-        "secondHotRate": 20,
-        "coldFace": 6,
-        "coldFaceRate": 14,
+        "secondHotRate": 18.7,
+        "coldFace": 5,
+        "coldFaceRate": 10,
         "topPair": "1-2",
         "topPairRate": 22,
-        "tripleRate": 4,
+        "tripleRate": 2,
         "predictedDices": [
           1,
           3,
@@ -8176,19 +8176,19 @@
         "sumFreq": {
           "4": 1,
           "5": 2,
-          "6": 5,
-          "7": 3,
-          "8": 8,
-          "9": 6,
+          "6": 4,
+          "7": 4,
+          "8": 7,
+          "9": 8,
           "10": 3,
-          "11": 6,
-          "12": 4,
-          "13": 3,
-          "14": 4,
-          "15": 4,
+          "11": 5,
+          "12": 5,
+          "13": 2,
+          "14": 5,
+          "15": 3,
           "16": 1
         },
-        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (20.7%), mặt ⚀ 6 đang lạnh (14%). Cặp số tiềm năng: 1-2."
+        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (20.7%), mặt ⚀ 5 đang lạnh (10%). Cặp số tiềm năng: 1-2."
       },
       "predicted_dices": [
         1,
@@ -8196,9 +8196,77 @@
         4
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T15:41:14.913Z"
+      "created_at": "2026-09-24T12:53:01.393Z"
     },
     "recent_matches": [
+      {
+        "phien": "1731233",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          6,
+          2,
+          1
+        ],
+        "time": "00:01:31"
+      },
+      {
+        "phien": "1731161",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          2,
+          6,
+          4
+        ],
+        "time": "22:44:12"
+      },
+      {
+        "phien": "1731160",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          3,
+          2,
+          2
+        ],
+        "time": "22:43:07"
+      },
+      {
+        "phien": "1731159",
+        "predicted": "XỈU",
+        "actual": "XỈU",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          3,
+          3
+        ],
+        "time": "22:42:07"
+      },
       {
         "phien": "1731108",
         "predicted": "XỈU",
@@ -8385,77 +8453,9 @@
           2
         ],
         "time": "21:36:35"
-      },
-      {
-        "phien": "1731097",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          3,
-          1,
-          5
-        ],
-        "time": "21:35:30"
-      },
-      {
-        "phien": "1731096",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          3
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "21:34:25"
-      },
-      {
-        "phien": "1731095",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          2,
-          3
-        ],
-        "actual_dices": [
-          3,
-          3,
-          3
-        ],
-        "time": "21:33:20"
-      },
-      {
-        "phien": "1731094",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          2,
-          5
-        ],
-        "actual_dices": [
-          5,
-          4,
-          3
-        ],
-        "time": "21:32:15"
       }
     ],
-    "updated_at": "2026-09-12T14:47:17.309Z"
+    "updated_at": "2026-09-12T17:01:31.709Z"
   },
   "ogkfan_txmd5": {
     "channel_id": "ogkfan_txmd5",
@@ -8477,32 +8477,32 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "564879",
-      "prediction": "TÀI",
-      "confidence": 77,
+      "phien_target": "580566",
+      "prediction": "XỈU",
+      "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 30,
+          "1": 29,
           "2": 33,
           "3": 18,
           "4": 25,
-          "5": 19,
+          "5": 20,
           "6": 25
         },
         "dicePercentages": {
-          "1": 20,
+          "1": 19.3,
           "2": 22,
           "3": 12,
           "4": 16.7,
-          "5": 12.7,
+          "5": 13.3,
           "6": 16.7
         },
         "hotFace": 2,
         "hotFaceRate": 22,
         "secondHot": 1,
-        "secondHotRate": 20,
+        "secondHotRate": 19.3,
         "coldFace": 3,
         "coldFaceRate": 12,
         "topPair": "1-2",
@@ -8515,11 +8515,11 @@
         ],
         "predictedSum": 7,
         "sumFreq": {
-          "4": 4,
+          "4": 3,
           "5": 2,
           "6": 3,
           "7": 3,
-          "8": 5,
+          "8": 6,
           "9": 5,
           "10": 6,
           "11": 8,
@@ -8538,7 +8538,7 @@
         4
       ],
       "predicted_sum": 7,
-      "created_at": "2026-09-12T14:19:33.541Z"
+      "created_at": "2026-09-24T12:53:00.429Z"
     },
     "recent_matches": [
       {
@@ -8819,7 +8819,7 @@
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1979283",
+      "phien_target": "1994839",
       "prediction": "XỈU",
       "confidence": 77,
       "game_type": "taixiu",
@@ -8827,59 +8827,60 @@
         "gameType": "taixiu",
         "diceCounts": {
           "1": 34,
-          "2": 28,
-          "3": 21,
-          "4": 25,
-          "5": 22,
+          "2": 29,
+          "3": 19,
+          "4": 23,
+          "5": 25,
           "6": 20
         },
         "dicePercentages": {
           "1": 22.7,
-          "2": 18.7,
-          "3": 14,
-          "4": 16.7,
-          "5": 14.7,
+          "2": 19.3,
+          "3": 12.7,
+          "4": 15.3,
+          "5": 16.7,
           "6": 13.3
         },
         "hotFace": 1,
         "hotFaceRate": 22.7,
         "secondHot": 2,
-        "secondHotRate": 18.7,
-        "coldFace": 6,
-        "coldFaceRate": 13.3,
+        "secondHotRate": 19.3,
+        "coldFace": 3,
+        "coldFaceRate": 12.7,
         "topPair": "2-3",
         "topPairRate": 20,
         "tripleRate": 0,
         "predictedDices": [
           1,
           2,
-          4
+          5
         ],
-        "predictedSum": 7,
+        "predictedSum": 8,
         "sumFreq": {
-          "4": 1,
+          "4": 2,
           "5": 2,
           "6": 2,
           "7": 5,
           "8": 7,
-          "9": 9,
-          "10": 8,
+          "9": 8,
+          "10": 7,
           "11": 5,
           "12": 4,
           "13": 2,
           "14": 1,
           "15": 2,
-          "16": 2
+          "16": 1,
+          "17": 2
         },
-        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (22.7%), mặt ⚀ 6 đang lạnh (13.3%). Cặp số tiềm năng: 2-3."
+        "summary": "Mặt ⚅ 1 đang có tần suất cao nhất (22.7%), mặt ⚀ 3 đang lạnh (12.7%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         1,
         2,
-        4
+        5
       ],
-      "predicted_sum": 7,
-      "created_at": "2026-09-12T15:41:12.812Z"
+      "predicted_sum": 8,
+      "created_at": "2026-09-24T12:53:01.425Z"
     },
     "recent_matches": [
       {
@@ -9145,51 +9146,51 @@
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 159,
-    "total_bets": 147,
-    "total_wins": 81,
+    "epochs": 160,
+    "total_bets": 148,
+    "total_wins": 82,
     "total_losses": 66,
-    "win_rate": 55.1,
-    "current_streak": 1,
+    "win_rate": 55.4,
+    "current_streak": 2,
     "max_streak": 11,
     "weights": {
       "markov": 0.15,
-      "pattern": 0.45,
-      "dice_matrix": 0.28,
+      "pattern": 0.44,
+      "dice_matrix": 0.29,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1414671",
+      "phien_target": "1431162",
       "prediction": "TÀI",
       "confidence": 81,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 19,
-          "2": 20,
-          "3": 24,
+          "1": 20,
+          "2": 18,
+          "3": 28,
           "4": 30,
-          "5": 24,
-          "6": 33
+          "5": 23,
+          "6": 31
         },
         "dicePercentages": {
-          "1": 12.7,
-          "2": 13.3,
-          "3": 16,
+          "1": 13.3,
+          "2": 12,
+          "3": 18.7,
           "4": 20,
-          "5": 16,
-          "6": 22
+          "5": 15.3,
+          "6": 20.7
         },
         "hotFace": 6,
-        "hotFaceRate": 22,
+        "hotFaceRate": 20.7,
         "secondHot": 4,
         "secondHotRate": 20,
-        "coldFace": 1,
-        "coldFaceRate": 12.7,
+        "coldFace": 2,
+        "coldFaceRate": 12,
         "topPair": "5-6",
-        "topPairRate": 22,
+        "topPairRate": 20,
         "tripleRate": 0,
         "predictedDices": [
           3,
@@ -9199,18 +9200,18 @@
         "predictedSum": 13,
         "sumFreq": {
           "5": 1,
-          "7": 3,
+          "7": 4,
           "8": 5,
           "9": 7,
-          "10": 4,
-          "11": 4,
+          "10": 3,
+          "11": 5,
           "12": 6,
           "13": 8,
           "14": 3,
           "15": 6,
-          "16": 3
+          "16": 2
         },
-        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (22%), mặt ⚀ 1 đang lạnh (12.7%). Cặp số tiềm năng: 5-6."
+        "summary": "Mặt ⚅ 6 đang có tần suất cao nhất (20.7%), mặt ⚀ 2 đang lạnh (12%). Cặp số tiềm năng: 5-6."
       },
       "predicted_dices": [
         3,
@@ -9218,9 +9219,26 @@
         6
       ],
       "predicted_sum": 13,
-      "created_at": "2026-09-12T15:41:12.788Z"
+      "created_at": "2026-09-24T12:53:01.471Z"
     },
     "recent_matches": [
+      {
+        "phien": "1414674",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          3,
+          4,
+          6
+        ],
+        "actual_dices": [
+          5,
+          2,
+          4
+        ],
+        "time": "22:44:02"
+      },
       {
         "phien": "1414620",
         "predicted": "TÀI",
@@ -9458,50 +9476,33 @@
           6
         ],
         "time": "21:34:25"
-      },
-      {
-        "phien": "1414606",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          6
-        ],
-        "actual_dices": [
-          6,
-          3,
-          5
-        ],
-        "time": "21:33:25"
       }
     ],
-    "updated_at": "2026-09-12T14:47:57.497Z"
+    "updated_at": "2026-09-12T15:44:02.901Z"
   },
   "max789_tx": {
     "channel_id": "max789_tx",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 152,
-    "total_bets": 140,
-    "total_wins": 75,
+    "epochs": 155,
+    "total_bets": 143,
+    "total_wins": 78,
     "total_losses": 65,
-    "win_rate": 53.6,
-    "current_streak": 0,
+    "win_rate": 54.5,
+    "current_streak": 3,
     "max_streak": 8,
     "weights": {
-      "markov": 0.21,
-      "pattern": 0.47,
-      "dice_matrix": 0.18,
+      "markov": 0.2,
+      "pattern": 0.44,
+      "dice_matrix": 0.23,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1644164",
+      "phien_target": "1658859",
       "prediction": "TÀI",
-      "confidence": 80,
+      "confidence": 76,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
@@ -9509,57 +9510,107 @@
           "1": 25,
           "2": 21,
           "3": 29,
-          "4": 29,
-          "5": 28,
-          "6": 18
+          "4": 25,
+          "5": 31,
+          "6": 19
         },
         "dicePercentages": {
           "1": 16.7,
           "2": 14,
           "3": 19.3,
-          "4": 19.3,
-          "5": 18.7,
-          "6": 12
+          "4": 16.7,
+          "5": 20.7,
+          "6": 12.7
         },
-        "hotFace": 3,
-        "hotFaceRate": 19.3,
-        "secondHot": 4,
+        "hotFace": 5,
+        "hotFaceRate": 20.7,
+        "secondHot": 3,
         "secondHotRate": 19.3,
         "coldFace": 6,
-        "coldFaceRate": 12,
+        "coldFaceRate": 12.7,
         "topPair": "3-4",
-        "topPairRate": 22,
+        "topPairRate": 20,
         "tripleRate": 2,
         "predictedDices": [
+          1,
+          3,
+          5
+        ],
+        "predictedSum": 9,
+        "sumFreq": {
+          "5": 2,
+          "7": 4,
+          "8": 5,
+          "9": 8,
+          "10": 5,
+          "11": 9,
+          "12": 3,
+          "13": 9,
+          "14": 4,
+          "15": 1
+        },
+        "summary": "Mặt ⚅ 5 đang có tần suất cao nhất (20.7%), mặt ⚀ 6 đang lạnh (12.7%). Cặp số tiềm năng: 3-4."
+      },
+      "predicted_dices": [
+        1,
+        3,
+        5
+      ],
+      "predicted_sum": 9,
+      "created_at": "2026-09-24T12:53:01.598Z"
+    },
+    "recent_matches": [
+      {
+        "phien": "1644166",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
           3,
           4,
           5
         ],
-        "predictedSum": 12,
-        "sumFreq": {
-          "5": 2,
-          "6": 1,
-          "7": 4,
-          "8": 5,
-          "9": 8,
-          "10": 6,
-          "11": 7,
-          "12": 3,
-          "13": 8,
-          "14": 5,
-          "15": 1
-        },
-        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (19.3%), mặt ⚀ 6 đang lạnh (12%). Cặp số tiềm năng: 3-4."
+        "actual_dices": [
+          5,
+          5,
+          1
+        ],
+        "time": "22:43:52"
       },
-      "predicted_dices": [
-        3,
-        4,
-        5
-      ],
-      "predicted_sum": 12,
-      "created_at": "2026-09-12T15:41:12.839Z"
-    },
-    "recent_matches": [
+      {
+        "phien": "1644165",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          3,
+          4,
+          5
+        ],
+        "actual_dices": [
+          4,
+          3,
+          6
+        ],
+        "time": "22:42:47"
+      },
+      {
+        "phien": "1644164",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          3,
+          4,
+          5
+        ],
+        "actual_dices": [
+          6,
+          6,
+          2
+        ],
+        "time": "22:41:37"
+      },
       {
         "phien": "1644118",
         "predicted": "TÀI",
@@ -9763,143 +9814,159 @@
           1
         ],
         "time": "21:35:20"
-      },
-      {
-        "phien": "1644106",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          4,
-          6,
-          5
-        ],
-        "time": "21:34:10"
-      },
-      {
-        "phien": "1644105",
-        "predicted": "TÀI",
-        "actual": "XỈU",
-        "is_win": false,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          2,
-          5,
-          2
-        ],
-        "time": "21:33:00"
-      },
-      {
-        "phien": "1644104",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          3,
-          4,
-          5
-        ],
-        "actual_dices": [
-          5,
-          5,
-          1
-        ],
-        "time": "21:31:49"
       }
     ],
-    "updated_at": "2026-09-12T14:48:12.519Z"
+    "updated_at": "2026-09-12T15:43:52.839Z"
   },
   "max789_txmd5": {
     "channel_id": "max789_txmd5",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 151,
-    "total_bets": 139,
-    "total_wins": 70,
-    "total_losses": 69,
-    "win_rate": 50.4,
-    "current_streak": 2,
+    "epochs": 155,
+    "total_bets": 143,
+    "total_wins": 71,
+    "total_losses": 72,
+    "win_rate": 49.7,
+    "current_streak": 0,
     "max_streak": 7,
     "weights": {
       "markov": 0.15,
-      "pattern": 0.44,
-      "dice_matrix": 0.29,
+      "pattern": 0.45,
+      "dice_matrix": 0.26,
       "mean_reversion": 0.13
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "1822431",
+      "phien_target": "1836708",
       "prediction": "TÀI",
-      "confidence": 76,
+      "confidence": 80,
       "game_type": "taixiu",
       "dice_analysis": {
         "gameType": "taixiu",
         "diceCounts": {
-          "1": 25,
-          "2": 29,
-          "3": 27,
-          "4": 27,
-          "5": 15,
+          "1": 22,
+          "2": 27,
+          "3": 29,
+          "4": 25,
+          "5": 20,
           "6": 27
         },
         "dicePercentages": {
-          "1": 16.7,
-          "2": 19.3,
-          "3": 18,
-          "4": 18,
-          "5": 10,
+          "1": 14.7,
+          "2": 18,
+          "3": 19.3,
+          "4": 16.7,
+          "5": 13.3,
           "6": 18
         },
-        "hotFace": 2,
+        "hotFace": 3,
         "hotFaceRate": 19.3,
-        "secondHot": 3,
+        "secondHot": 2,
         "secondHotRate": 18,
         "coldFace": 5,
-        "coldFaceRate": 10,
-        "topPair": "3-4",
+        "coldFaceRate": 13.3,
+        "topPair": "2-3",
         "topPairRate": 20,
-        "tripleRate": 2,
+        "tripleRate": 0,
         "predictedDices": [
           2,
           3,
-          4
+          6
         ],
-        "predictedSum": 9,
+        "predictedSum": 11,
         "sumFreq": {
           "5": 1,
-          "6": 4,
-          "7": 2,
-          "8": 6,
-          "9": 5,
+          "6": 3,
+          "7": 1,
+          "8": 5,
+          "9": 6,
           "10": 11,
           "11": 8,
-          "12": 2,
+          "12": 3,
           "13": 7,
-          "14": 2,
-          "15": 1,
-          "17": 1
+          "14": 3,
+          "17": 2
         },
-        "summary": "Mặt ⚅ 2 đang có tần suất cao nhất (19.3%), mặt ⚀ 5 đang lạnh (10%). Cặp số tiềm năng: 3-4."
+        "summary": "Mặt ⚅ 3 đang có tần suất cao nhất (19.3%), mặt ⚀ 5 đang lạnh (13.3%). Cặp số tiềm năng: 2-3."
       },
       "predicted_dices": [
         2,
         3,
-        4
+        6
       ],
-      "predicted_sum": 9,
-      "created_at": "2026-09-12T15:41:12.893Z"
+      "predicted_sum": 11,
+      "created_at": "2026-09-24T12:53:01.574Z"
     },
     "recent_matches": [
+      {
+        "phien": "1822477",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          3,
+          6
+        ],
+        "actual_dices": [
+          1,
+          3,
+          6
+        ],
+        "time": "23:36:33"
+      },
+      {
+        "phien": "1822433",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          2,
+          3,
+          6
+        ],
+        "actual_dices": [
+          5,
+          6,
+          3
+        ],
+        "time": "22:44:02"
+      },
+      {
+        "phien": "1822432",
+        "predicted": "XỈU",
+        "actual": "TÀI",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          3,
+          4
+        ],
+        "actual_dices": [
+          6,
+          5,
+          6
+        ],
+        "time": "22:42:52"
+      },
+      {
+        "phien": "1822431",
+        "predicted": "TÀI",
+        "actual": "XỈU",
+        "is_win": false,
+        "predicted_dices": [
+          2,
+          3,
+          4
+        ],
+        "actual_dices": [
+          3,
+          2,
+          5
+        ],
+        "time": "22:41:42"
+      },
       {
         "phien": "1822386",
         "predicted": "TÀI",
@@ -10086,99 +10153,31 @@
           5
         ],
         "time": "21:36:00"
-      },
-      {
-        "phien": "1822375",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          3,
-          6
-        ],
-        "actual_dices": [
-          1,
-          2,
-          5
-        ],
-        "time": "21:34:50"
-      },
-      {
-        "phien": "1822374",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          2,
-          3,
-          6
-        ],
-        "actual_dices": [
-          3,
-          1,
-          6
-        ],
-        "time": "21:33:35"
-      },
-      {
-        "phien": "1822373",
-        "predicted": "XỈU",
-        "actual": "TÀI",
-        "is_win": false,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          6,
-          5,
-          6
-        ],
-        "time": "21:32:25"
-      },
-      {
-        "phien": "1822372",
-        "predicted": "XỈU",
-        "actual": "XỈU",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          6
-        ],
-        "actual_dices": [
-          4,
-          3,
-          2
-        ],
-        "time": "21:31:14"
       }
     ],
-    "updated_at": "2026-09-12T14:47:57.550Z"
+    "updated_at": "2026-09-12T16:36:33.300Z"
   },
   "volta_general": {
     "channel_id": "volta_general",
     "platform": "Game",
     "game_name": "Tài Xỉu",
     "game_type": "taixiu",
-    "epochs": 124,
-    "total_bets": 112,
-    "total_wins": 44,
+    "epochs": 125,
+    "total_bets": 113,
+    "total_wins": 45,
     "total_losses": 68,
-    "win_rate": 39.3,
-    "current_streak": 0,
+    "win_rate": 39.8,
+    "current_streak": 1,
     "max_streak": 14,
     "weights": {
       "markov": 0.16,
       "pattern": 0.44,
-      "dice_matrix": 0.25,
+      "dice_matrix": 0.26,
       "mean_reversion": 0.14
     },
     "learning_rate": 0.05,
     "last_prediction": {
-      "phien_target": "330958",
+      "phien_target": "344507",
       "prediction": "TÀI",
       "confidence": 76,
       "game_type": "taixiu",
@@ -10226,9 +10225,26 @@
         4
       ],
       "predicted_sum": 8,
-      "created_at": "2026-09-12T14:19:18.804Z"
+      "created_at": "2026-09-24T12:53:05.063Z"
     },
     "recent_matches": [
+      {
+        "phien": "344506",
+        "predicted": "TÀI",
+        "actual": "TÀI",
+        "is_win": true,
+        "predicted_dices": [
+          1,
+          3,
+          4
+        ],
+        "actual_dices": [
+          4,
+          4,
+          3
+        ],
+        "time": "19:53:05"
+      },
       {
         "phien": "330957",
         "predicted": "XỈU",
@@ -10466,25 +10482,8 @@
           3
         ],
         "time": "23:52:10"
-      },
-      {
-        "phien": "329949",
-        "predicted": "TÀI",
-        "actual": "TÀI",
-        "is_win": true,
-        "predicted_dices": [
-          1,
-          3,
-          4
-        ],
-        "actual_dices": [
-          4,
-          4,
-          3
-        ],
-        "time": "23:50:45"
       }
     ],
-    "updated_at": "2026-09-12T14:19:18.804Z"
+    "updated_at": "2026-09-24T12:53:05.063Z"
   }
 }
