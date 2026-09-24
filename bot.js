@@ -11,7 +11,7 @@ const collector = require('./lib/collector');
 const config = require('./lib/config');
 const doithevip = require('./lib/doithevip');
 
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8320966192:AAFUvbXL9LlBQNYRWly3L478eaEzHTNHOwI';
+const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '8976405097:AAFgyyqSuxkA6C_1h361Pp8Cz0za8_ZrXyE';
 const BASE_URL = `https://api.telegram.org/bot${BOT_TOKEN}`;
 
 const ADMIN_CONTACT = `👑 <b>Admin:</b> Hoangha (ID: <code>6482147126</code>)`;
