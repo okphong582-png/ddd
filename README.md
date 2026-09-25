@@ -33,3 +33,14 @@ Hệ thống bot Telegram kết hợp Web Dashboard soi cầu đa thuật toán 
 ## 4. Trang Quản Trị Cấp Token Web
 - Địa chỉ: `http://localhost:3000/admin.html`
 - Kết nối Firebase Realtime Database: tạo mã token mới, xem mã nào đã kích hoạt (kèm Telegram ID & Tên người dùng), bật/tắt bảo trì hoặc xóa token.
+
+---
+
+## 5. Cơ Chế Chạy Tự Động 24/7 (GitHub Actions & Cloud)
+- **Tự động chạy trên GitHub Actions:**
+  - Hệ thống đã tích hợp sẵn workflow `.github/workflows/bot-247.yml`.
+  - Khi push code lên GitHub, GitHub Actions sẽ tự động khởi động bot chạy 24/7.
+  - Tự động xoay vòng phiên và dự phòng chạy lại định kỳ mỗi 4 giờ (`0 */4 * * *`).
+  - *Lưu ý:* Khi tạo repo mới trên GitHub, hãy vào tab **Actions** và bấm **"I understand my workflows, go ahead and enable them"** (nếu GitHub hiển thị yêu cầu bật).
+- **Tự động chạy trên Render / Railway:**
+  - Đã có sẵn file `Procfile` (`web: npm start`) và `render.yaml`. Chỉ cần kết nối repo với Render là hệ thống tự build và chạy 24/7.
