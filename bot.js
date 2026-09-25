@@ -2012,6 +2012,15 @@ ${menuText}
 async function startPolling() {
   if (isPolling) return;
   isPolling = true;
+
+  // Luôn tự động xóa webhook cũ để tránh lỗi 409 Conflict
+  try {
+    await callApi('deleteWebhook', { drop_pending_updates: false });
+    console.log('🧹 [Telegram Bot] Đã kiểm tra và dọn sạch webhook cũ (đảm bảo Long Polling thông suốt).');
+  } catch (err) {
+    console.warn('⚠️ [Telegram Bot] Không thể xóa webhook:', err.message);
+  }
+
   console.log('🤖 [Telegram Bot] Đã khởi động Long Polling thành công!');
 
   while (isPolling) {
@@ -2031,6 +2040,10 @@ async function startPolling() {
             handleCallbackQuery(u.callback_query).catch(err => console.error('Handle callback error:', err.message));
           }
         }
+      } else if (updates && updates.error_code === 409) {
+        console.warn('⚠️ [Telegram Bot] Xảy ra xung đột webhook (409). Đang dọn sạch webhook...');
+        await callApi('deleteWebhook', { drop_pending_updates: false });
+        await new Promise(r => setTimeout(r, 1500));
       }
     } catch (e) {
       await new Promise(r => setTimeout(r, 2000));
